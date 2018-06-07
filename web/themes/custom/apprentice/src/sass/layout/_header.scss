@@ -2,6 +2,9 @@
 
 .top-header{
   height: 400px;
+  @include phone{
+    height: 250px;
+  }
 
   .header{
     @extend %clearfix;
@@ -69,9 +72,12 @@
 @include phone{
   .navbar{
 
-    width: 200px;
+    width: 150px;
     li{
       width: auto;
+      a{
+        font-size: 22px;
+      }
     }
 
     .main-menu{
@@ -101,9 +107,26 @@
 
 
 
+
+
   }// end of navbar class
 
+  .slogan{
+    padding-left: 0px;
+    li{
+
+      width: 120px;
+      a{
+       font-size: 22px;
+     }
+
+    }
+
+
+  }
+
 }// end of mobile view
+
 
 
 

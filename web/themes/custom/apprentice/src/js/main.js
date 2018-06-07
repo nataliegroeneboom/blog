@@ -29,6 +29,7 @@ function navBar(){
 
 $('.icon').once().click(function(){
 	$('.main-menu').toggleClass('responsive');
+	$('.layout-container').toggleClass('responsive');
 
 })
 

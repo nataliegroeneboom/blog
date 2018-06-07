@@ -102,6 +102,9 @@ body {
 h1 {
   text-align: center;
   margin-top: 20px; }
+  @media (max-width: 599px) {
+    h1 {
+      margin-top: 0px; } }
 
 .container-about {
   padding: 15px;
@@ -110,7 +113,8 @@ h1 {
     font-size: 3rem; }
     @media (max-width: 599px) {
       .container-about h2 {
-        border-bottom: 2px solid #000; } }
+        border-bottom: 2px solid #000;
+        font-size: 2.5rem; } }
   .container-about td {
     font-size: 2rem;
     vertical-align: text-top; }
@@ -204,11 +208,25 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px; }
+    @media (max-width: 599px) {
+      .layout-content-top .introduction {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto; } }
   .layout-content-top .intro {
     grid-column: 1 / 2; }
+    @media (max-width: 599px) {
+      .layout-content-top .intro {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1 / 2; } }
   .layout-content-top .side {
     grid-column: 2 / 3;
-    justify-self: startl; }
+    justify-self: start; }
+    @media (max-width: 599px) {
+      .layout-content-top .side {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2 / 3; } }
 
 .blog-article {
   clear: both;
@@ -276,6 +294,9 @@ footer {
 
 .top-header {
   height: 400px; }
+  @media (max-width: 599px) {
+    .top-header {
+      height: 250px; } }
   .top-header .header {
     width: 100%; }
     .top-header .header .main-menu, .top-header .header .slogan {
@@ -301,9 +322,11 @@ footer {
       display: none; }
     @media (max-width: 599px) {
       .top-header .header .navbar {
-        width: 200px; }
+        width: 150px; }
         .top-header .header .navbar li {
           width: auto; }
+          .top-header .header .navbar li a {
+            font-size: 22px; }
         .top-header .header .navbar .main-menu .menu-item:not(:first-child) {
           display: none; }
         .top-header .header .navbar .main-menu .icon {
@@ -316,7 +339,13 @@ footer {
         .top-header .header .navbar .main-menu.responsive .icon a {
           position: absolute;
           top: 5px;
-          right: 15px; } }
+          right: 15px; }
+      .top-header .header .slogan {
+        padding-left: 0px; }
+        .top-header .header .slogan li {
+          width: 120px; }
+          .top-header .header .slogan li a {
+            font-size: 22px; } }
   .top-header .banner {
     width: 100%;
     height: 200px; }
@@ -325,6 +354,10 @@ footer {
   height: 500px;
   width: 100%;
   padding-top: 65px; }
+  @media (max-width: 599px) {
+    .showcase {
+      height: 250px;
+      padding-top: 70px; } }
   .showcase h2 {
     text-align: center;
     font-size: 40px; }
@@ -339,5 +372,8 @@ footer {
     .showcase blockquote:after {
       content: close-quote;
       font-size: 70px; }
+    @media (max-width: 599px) {
+      .showcase blockquote {
+        display: none; } }
 
 /*# sourceMappingURL=style.css.map */

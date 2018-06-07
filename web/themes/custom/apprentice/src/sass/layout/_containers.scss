@@ -17,16 +17,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
+    @include phone{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    }
   }
 
     .intro{
       grid-column: 1 / 2;
+      @include phone{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1 / 2;
+      }
     }
 
       .side{
       //  padding: 25px 10px 60px 10px;
       grid-column: 2 / 3;
-      justify-self: startl
+      justify-self: start;
+      @include phone{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2 / 3;
+      }
       }
 
 
