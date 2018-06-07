@@ -1,0 +1,15 @@
+footer{
+  background: #000;
+  padding-top: 15px;
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+  .icons{
+    justify-self: center;
+    font-size: 30px;
+    color: #fff;
+  }
+}

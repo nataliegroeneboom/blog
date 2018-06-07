@@ -1,0 +1,33 @@
+
+
+//==========================SHOWCASE========================
+//=============================================================
+
+    .showcase{
+      height: 500px;
+      width: 100%;
+      padding-top: 65px;
+
+      h2{
+        text-align: center;
+        font-size: 40px;
+      }
+
+      blockquote{
+        text-align: center;
+        font-size: 48px;
+        margin-top: 35px;
+        font-style: italic;
+
+        &:before{
+          content: open-quote;
+          font-size: 70px;
+        }
+        &:after{
+          content: close-quote;
+          font-size: 70px;
+        }
+      }
+
+
+    }

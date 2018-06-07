@@ -1,0 +1,49 @@
+// NAV HELPER
+
+%center-layout{
+  max-width: 1650px;
+}
+
+%center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+%nav{
+  list-style-type: none;
+  display: inline-block;
+
+    li{
+      width: 120px;
+      display: inline-block;
+    }
+
+        a{
+  //        display: block;
+          text-decoration: none;
+   //       @extends center;
+          font-size: $font-size-med;
+        }
+    
+}
+
+%navmob{
+  display: block;
+  li{
+    display: block;
+  }
+}
+
+%clearfix{
+      
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* %flex-parent{
+  display: flex;
+  flex-direction: row;
+
+} */

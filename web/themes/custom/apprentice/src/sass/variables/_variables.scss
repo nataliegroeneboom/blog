@@ -1,0 +1,53 @@
+
+
+// description colour
+
+$cream					: rgba(239,249,235, 0.5);
+$botticelli				: #DCE8EF;
+$white		 			: #fff;
+$black					: #000;
+$alto					: #D1D1D1;
+$cola					: #3D1F00;
+$nobel					: #ADA4A6;
+
+$colour-body			: $cream;
+$colour-tutorial		: $botticelli;
+$colour-side			: $cola;
+$colour-shadow			: 	5px 10px 4px 3px rgba(56, 56, 56, 0.6),
+                    		2px 4px 2px 5px rgba(142, 142, 142, 0.8);
+$colour-borderline		: $alto;
+$colour-border-shadow	: 0px 1px 1px $alto;
+$font-size-showcase		: 3rem;
+$font-size-large		: 2.5rem;
+$font-size-med			: 2rem;
+$font-size-small		: 1.8rem;
+$font-size-vsmall		: 1.5rem;
+
+$font-colour-prim		:$black;
+$font-colour-sec		:$white;
+$font-colour-date		:$nobel;
+
+$stack-sans-serif		:'Marvel', sans-serif;
+$stack-monospace		: 'Share Tech Mono', monospace;
+$stack-pomp				: 'Pompiere', cursive;
+$stack-share			: 'Share', cursive;
+
+
+//margin and padding
+
+$margin-main			: 20px;
+$padding-main			: 15px;
+$padding-block			: 100px;
+
+
+// COLUMN WIDTH
+
+$width-into-left-desktop: 35%;
+$width-intro-right-desktop: 65%;
+
+
+//MEDIA QUERIES BREAKPOINTS
+
+$brk-narrow				: 768px;
+$brk-desktop			: 1024px;
+$brk-wide				: 1400px;

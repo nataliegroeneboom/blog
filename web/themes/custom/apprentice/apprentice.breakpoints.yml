@@ -1,0 +1,31 @@
+apprentice.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+apprentice.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 480px) and (max-width: 767px)'
+  weight: 1
+  multipliers:
+    - 1x
+apprentice.tablet:
+  label: tablet
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1024px)'
+  weight: 2
+  multipliers:
+    - 1x
+apprentice.desktop:
+  label: desktop
+  mediaQuery: 'all and (min-width: 1025px) and (max-width: 1280px)'
+  weight: 3
+  multipliers:
+    - 1x
+apprentice.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1281px)'
+  weight: 4
+  multipliers:
+    - 1x
+

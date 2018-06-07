@@ -1,0 +1,77 @@
+
+
+.top-header{
+  height: 400px;
+
+  .header{
+    @extend %clearfix;
+    width: 100%;
+
+
+        .layout-container{
+
+
+            nav, div.block-apprentice-branding{
+
+            }
+
+
+    }
+
+ .main-menu, .slogan{
+
+      list-style-type: none;
+      text-align: center;
+
+        li{
+          padding: 5px 0;
+          a{
+            color: $black;
+          }
+        }
+
+    }
+
+
+
+
+
+
+  section.block-system-branding-block{
+  display: inline-block;
+  float: left;
+  }
+
+  #block-apprentice-main-menu{
+  display: inline-block;
+  float: right;
+  }
+
+
+    .main-menu, .slogan{
+    //  width:: 100%;
+   //  display: inline-block;
+
+          li{
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+          }
+    }
+
+
+
+
+  
+
+
+
+
+    }
+
+
+  .banner{
+    width: 100%;
+    height: 200px;
+  }
+  }

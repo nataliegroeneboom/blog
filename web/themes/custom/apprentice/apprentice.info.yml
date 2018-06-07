@@ -1,0 +1,26 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+name: 'apprentice'
+description: 'Blog custom theme with scss'
+
+regions:
+  main_navigation: 'Main Navigation'
+  header: 'Header'
+  showcase: 'Showcase'
+  content: 'Main Content'
+  blog_grid: 'Blog Grid'
+  content_secondary: 'Secondary Content'
+  sidebar: 'Sidebar'
+  sidebar_first: 'Primary'
+  bottom_left: 'Bottom Left'
+  bottom_center: 'Bottom center'
+  bottom_right: 'Bottom right'
+  footer: 'Footer'
+
+
+
+
+libraries:
+  - apprentice/global-styling
+  - apprentice/fonts

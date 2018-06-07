@@ -1,0 +1,131 @@
+
+
+.title{
+  @extend %center;
+  width: 400px;
+  h1{
+    text-align: center;
+  }
+}
+
+
+
+.intro{
+      font-size: $font-size-showcase;
+
+
+
+    .block-title{
+      text-align: center;
+  //   color: $white;
+      font-size: $font-size-showcase;
+   //   margin-bottom: $padding-block;
+    }
+
+
+
+    .views-field-name{
+
+              span p{
+                  text-align: center;
+                  font-size: $font-size-med;
+
+              }
+          }
+
+ }
+
+
+
+.paragraph-code{
+
+  background-color: $colour-tutorial;
+  font-family: $stack-monospace;
+  color: $font-colour-prim;
+  font-size: $font-size-med;
+}
+
+
+
+ .views-field-field-blog-topics-covered, .views-field-field-blog-date{
+        font-size: $font-size-large;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        }
+
+   .blog-title{
+        font-size: $font-size-large;
+        margin-top: 20px;
+        }
+   .blog-body{
+
+   font-size: $font-size-small;
+
+        }
+
+.topics-covered{
+  .field-content{
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+
+    // ================= RECENT BLOG BLOCK ==========================
+
+   .recent-blog{
+
+    .views-field-field-blog-date, .views-field-title{
+        font-size: $font-size-med;
+        font-weight: bold;
+
+       }
+
+       .views-field-body{
+        font-size: $font-size-med;
+       }
+
+      h2{
+        font-size: $font-size-showcase;
+        text-align: center;
+      }
+
+
+
+    .views-field-field-blog-date{
+      &::after{
+        content: " | ";
+        font-size: 30px;
+      }
+    }
+
+
+      @include phone{
+        .views-field-title, .views-field-body{
+          color: $black;
+        }
+         .views-field-field-blog-date{
+          color: $black;
+            &::after{
+        color: $black;
+      }
+         }
+
+      }
+
+      }
+
+      .blog-grid{
+        .views-field-title a{
+          color: $black;
+          font-weight: bold;
+        }
+
+        .views-field-field-blog-date{
+          color: $font-colour-date;
+          font-size: $font-size-med;
+        }
+      }

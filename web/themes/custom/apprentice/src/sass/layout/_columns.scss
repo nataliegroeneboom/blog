@@ -1,0 +1,69 @@
+
+
+
+.side{
+
+	//	background-color: $cream;
+
+
+}
+
+.side, .intro{
+	display: block;
+}
+
+
+	@include phone {
+
+		.intro, .side{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 18px;
+			}
+
+		.side{
+			width: 35%;
+		//	background-color: $colour-body;
+
+			.block-title{
+			color: $black;
+			}
+			.views-field-field-resuable-image{
+					width: 220px;
+					padding: 15px 20px 15px 0px;
+					display: block;
+					float: left;
+					img{
+
+						border: 2px solid $black;
+
+						}
+			}
+		}
+
+
+		.intro{
+			width: 60%;
+
+
+	color: $black;
+
+		}
+
+
+	}
+
+
+
+
+#block-mynameisnatalieandiamawebdeveloperapprentice{
+
+				.group-left{
+				 width: $width-into-left-desktop;
+				}
+
+				.group-right{
+				  width: $width-intro-right-desktop;
+				}
+
+}
