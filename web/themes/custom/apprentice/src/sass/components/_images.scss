@@ -2,7 +2,9 @@
   .region-content{
     img{
       width: 100%;
-      height: 500px;
+      height: auto;
+      border: solid 1px #EFEFEF;
+      padding: 5px;
     }
   }
 }

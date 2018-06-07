@@ -57,17 +57,57 @@
             width: 150px;
             text-align: center;
           }
+          .icon{
+            display: none;
+          }
     }
 
+.print{
+  display: none;
+}
 
+@include phone{
+  .navbar{
 
-
-  
-
-
-
-
+    width: 200px;
+    li{
+      width: auto;
     }
+
+    .main-menu{
+
+                 .menu-item{
+                   &:not(:first-child) {display: none;}
+                 }
+                 .icon{
+                   float: right;
+                   display: block;
+                   padding-right: 15px;
+                 }
+                 &.responsive{
+
+                   .menu-item{
+                     float: none;
+                     display: block;
+                   }
+                   .icon a{
+                     position: absolute;
+                     top: 5px;
+                     right: 15px;
+                   }
+
+                 }
+         }
+
+
+
+  }// end of navbar class
+
+}// end of mobile view
+
+
+
+}//end of header
 
 
   .banner{

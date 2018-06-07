@@ -15,11 +15,11 @@
             <key>host</key>
             <string>127.0.0.1</string>
             <key>name</key>
-            <string>drud/tester.ddev.local</string>
+            <string>drud/natalies-blog.ddev.local</string>
             <key>password</key>
             <string>db</string>
             <key>port</key>
-            <integer>32772</integer>
+            <integer>32768</integer>
             <key>rdbms_type</key>
             <string>mysql</string>
             <key>sslCACertFileLocation</key>

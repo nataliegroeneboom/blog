@@ -47,7 +47,7 @@
 
 
 
- .views-field-field-blog-topics-covered, .views-field-field-blog-date{
+ .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date{
         font-size: $font-size-large;
         text-transform: uppercase;
         font-weight: bold;
@@ -82,10 +82,21 @@
         font-size: $font-size-med;
         font-weight: bold;
 
+
+       }
+
+       .field-content{
+         a{
+           color: $font-colour-prim;
+           font-size: $font-size-large;
+           &:hover{
+             text-decoration: none;
+           }
+         }
        }
 
        .views-field-body{
-        font-size: $font-size-med;
+        font-size: $font-size-showcase;
        }
 
       h2{

@@ -22,7 +22,9 @@ body {
 
 .intro .region-content img {
   width: 100%;
-  height: 500px; }
+  height: auto;
+  border: solid 1px #EFEFEF;
+  padding: 5px; }
 
 .title {
   width: 400px; }
@@ -44,7 +46,7 @@ body {
   color: #000;
   font-size: 2rem; }
 
-.views-field-field-blog-topics-covered, .views-field-field-blog-date {
+.views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date {
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: bold; }
@@ -64,8 +66,14 @@ body {
   font-size: 2rem;
   font-weight: bold; }
 
+.recent-blog .field-content a {
+  color: #000;
+  font-size: 2.5rem; }
+  .recent-blog .field-content a:hover {
+    text-decoration: none; }
+
 .recent-blog .views-field-body {
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .recent-blog h2 {
   font-size: 3rem;
@@ -90,6 +98,74 @@ body {
 .blog-grid .views-field-field-blog-date {
   color: #ADA4A6;
   font-size: 2rem; }
+
+h1 {
+  text-align: center;
+  margin-top: 20px; }
+
+.container-about {
+  padding: 15px;
+  padding-bottom: 35px; }
+  .container-about h2 {
+    font-size: 3rem; }
+    @media (max-width: 599px) {
+      .container-about h2 {
+        border-bottom: 2px solid #000; } }
+  .container-about td {
+    font-size: 2rem;
+    vertical-align: text-top; }
+    .container-about td a {
+      color: #000; }
+  .container-about table {
+    margin-top: 30px;
+    margin-right: 30px; }
+    @media (max-width: 599px) {
+      .container-about table {
+        width: 100%;
+        margin-right: 0px; } }
+  .container-about #web .link {
+    width: 150px; }
+    @media (max-width: 599px) {
+      .container-about #web .link {
+        width: 100%; } }
+  .container-about #web .proj {
+    width: 600px; }
+    @media (max-width: 599px) {
+      .container-about #web .proj {
+        display: none; } }
+  .container-about #qualifications .inst {
+    width: 150px; }
+    @media (max-width: 599px) {
+      .container-about #qualifications .inst {
+        display: none; } }
+  .container-about #qualifications .year {
+    width: 70px; }
+    @media (max-width: 599px) {
+      .container-about #qualifications .year {
+        width: 50%; } }
+  .container-about #qualifications .qual {
+    width: 530px; }
+    @media (max-width: 599px) {
+      .container-about #qualifications .qual {
+        width: 50%; } }
+  .container-about #experience .comp {
+    width: 150px; }
+    @media (max-width: 599px) {
+      .container-about #experience .comp {
+        width: 50%; } }
+  .container-about #experience .job {
+    width: 150px; }
+    @media (max-width: 599px) {
+      .container-about #experience .job {
+        width: 50%; } }
+  .container-about #experience .work {
+    width: 600px; }
+    @media (max-width: 599px) {
+      .container-about #experience .work {
+        display: none; } }
+
+.blog .topics-wrapper .field-content a {
+  color: #000; }
 
 .side, .intro {
   display: block; }
@@ -219,6 +295,28 @@ footer {
       display: inline-block;
       width: 150px;
       text-align: center; }
+    .top-header .header .main-menu .icon, .top-header .header .slogan .icon {
+      display: none; }
+    .top-header .header .print {
+      display: none; }
+    @media (max-width: 599px) {
+      .top-header .header .navbar {
+        width: 200px; }
+        .top-header .header .navbar li {
+          width: auto; }
+        .top-header .header .navbar .main-menu .menu-item:not(:first-child) {
+          display: none; }
+        .top-header .header .navbar .main-menu .icon {
+          float: right;
+          display: block;
+          padding-right: 15px; }
+        .top-header .header .navbar .main-menu.responsive .menu-item {
+          float: none;
+          display: block; }
+        .top-header .header .navbar .main-menu.responsive .icon a {
+          position: absolute;
+          top: 5px;
+          right: 15px; } }
   .top-header .banner {
     width: 100%;
     height: 200px; }
