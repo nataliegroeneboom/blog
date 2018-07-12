@@ -32,51 +32,54 @@ body {
     text-align: center; }
 
 .intro {
-  font-size: 3rem; }
+  font-size: 3em; }
   .intro .block-title {
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3em; }
   .intro .views-field-name span p {
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2em; }
 
 .paragraph-code {
-  background-color: #DCE8EF;
+  background-color: #757575;
   font-family: "Share Tech Mono", monospace;
-  color: #000;
-  font-size: 2rem; }
+  color: #8FD400;
+  font-size: 2em;
+  width: 75%;
+  margin: 15px auto;
+  padding: 15px; }
 
 .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   text-transform: uppercase;
   font-weight: bold; }
 
 .blog-title {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin-top: 20px; }
 
 .blog-body {
-  font-size: 1.8rem; }
+  font-size: 1.8em; }
 
 .topics-covered .field-content p {
   font-size: 18px;
   text-align: center; }
 
 .recent-blog .views-field-field-blog-date, .recent-blog .views-field-title {
-  font-size: 2rem;
+  font-size: 1.8em;
   font-weight: bold; }
 
 .recent-blog .field-content a {
   color: #000;
-  font-size: 2.5rem; }
+  font-size: 1em; }
   .recent-blog .field-content a:hover {
     text-decoration: none; }
 
 .recent-blog .views-field-body {
-  font-size: 3rem; }
+  font-size: 1.8em; }
 
 .recent-blog h2 {
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center; }
 
 .recent-blog .views-field-field-blog-date::after {
@@ -97,7 +100,24 @@ body {
 
 .blog-grid .views-field-field-blog-date {
   color: #ADA4A6;
-  font-size: 2rem; }
+  font-size: 2em; }
+
+.paragraph-blog-sub-title {
+  font-weight: bold;
+  font-size: 2em; }
+  .paragraph-blog-sub-title::after {
+    content: " ==>"; }
+
+.blog-full-content .field-paragraph-paragraph p {
+  font-size: 1.8em; }
+
+.blog-full-content .field-paragraph-paragraph span {
+  font-weight: bold;
+  background-color: #D3D3D3;
+  display: inline-block;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: red; }
 
 h1 {
   text-align: center;
@@ -110,13 +130,13 @@ h1 {
   padding: 15px;
   padding-bottom: 35px; }
   .container-about h2 {
-    font-size: 3rem; }
+    font-size: 3em; }
     @media (max-width: 599px) {
       .container-about h2 {
         border-bottom: 2px solid #000;
-        font-size: 2.5rem; } }
+        font-size: 2.5em; } }
   .container-about td {
-    font-size: 2rem;
+    font-size: 2em;
     vertical-align: text-top; }
     .container-about td a {
       color: #000; }
@@ -170,6 +190,33 @@ h1 {
 
 .blog .topics-wrapper .field-content a {
   color: #000; }
+
+.blog-title-individual .field--name-body {
+  margin-top: 120px;
+  border-bottom: 1px solid black; }
+  .blog-title-individual .field--name-body p {
+    padding-bottom: 15px; }
+
+.blog-full-title {
+  margin: 15px 0;
+  font-size: 3em; }
+
+.blog-full-content .blog-full-topics .field--label {
+  font-size: 2em; }
+
+.blog-full-content .blog-full-topics .field--item {
+  display: inline-block;
+  font-size: 2em; }
+  .blog-full-content .blog-full-topics .field--item::after {
+    content: " and "; }
+  .blog-full-content .blog-full-topics .field--item:last-of-type::after {
+    content: ","; }
+
+.blog-full-content .field--name-field-blog-date {
+  font-size: 2em; }
+
+.blog-full-content .field--name-body {
+  font-size: 1.8em; }
 
 .side, .intro {
   display: block; }
@@ -266,7 +313,7 @@ h1 {
       .blog-grid img {
         width: 100%; } }
   .blog-grid .views-field-title {
-    font-size: 2.5rem; }
+    font-size: 2.5em; }
 
 .layout-container {
   max-width: 1650px; }
@@ -375,8 +422,5 @@ footer {
     @media (max-width: 599px) {
       .showcase blockquote {
         display: none; } }
-
-.blogs-taxonomy .group-left {
-  display: none; }
 
 /*# sourceMappingURL=style.css.map */

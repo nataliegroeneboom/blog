@@ -4,8 +4,8 @@
 		attach:function(context, settings){
 
 
-			$(".topics-covered.zebra-odd").addClass("col-md-4 col-md-offset-2");
-			$(".topics-covered.zebra-even").addClass("col-md-4 col-md-offset-1");
+			$(".topics-covered.zebra-odd").addClass("col-md-4");
+			$(".topics-covered.zebra-even").addClass("col-md-4");
 			$("#block-apprentice-main-menu").addClass("navbar");
 
 

@@ -44,7 +44,7 @@
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
-    'paragraph-blog-sub-title',
+    'field-paragraph-paragraph',
   ]
 %}
 {%
@@ -58,12 +58,12 @@
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field--items') }}>
       {% for item in items %}
-        <h3{{ item.attributes.addClass('field--item') }}>{{ item.content }}</h3>
+        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <h3{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</h3>
+      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
@@ -73,7 +73,7 @@
       <div class="field--items">
     {% endif %}
     {% for item in items %}
-      <h3{{ item.attributes.addClass('field--item') }}>{{ item.content }}</h3>
+      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
       </div>

@@ -41,8 +41,11 @@
 
   background-color: $colour-tutorial;
   font-family: $stack-monospace;
-  color: $font-colour-prim;
+  color:  $font-code;
   font-size: $font-size-med;
+  width: 75%;
+  margin: 15px auto;
+  padding: 15px;
 }
 
 
@@ -79,7 +82,7 @@
    .recent-blog{
 
     .views-field-field-blog-date, .views-field-title{
-        font-size: $font-size-med;
+        font-size: $font-size-small;
         font-weight: bold;
 
 
@@ -88,7 +91,7 @@
        .field-content{
          a{
            color: $font-colour-prim;
-           font-size: $font-size-large;
+           font-size: $font-size-vsmall;
            &:hover{
              text-decoration: none;
            }
@@ -96,7 +99,7 @@
        }
 
        .views-field-body{
-        font-size: $font-size-showcase;
+        font-size: $font-size-small;
        }
 
       h2{
@@ -140,3 +143,30 @@
           font-size: $font-size-med;
         }
       }
+
+      //==========================Blog individual full page layout===============
+      .paragraph-blog-sub-title{
+        font-weight: bold;
+        font-size: $font-size-med;
+        &::after{
+          content: " ==>";
+        }
+      }
+
+  //==========================Blog individual paragraph layout===============
+.blog-full-content{
+  .field-paragraph-paragraph{
+
+    p{
+      font-size: $font-size-small;
+    }
+    span{
+      font-weight: bold;
+      background-color: #D3D3D3;
+      display: inline-block;
+      padding: 1px 3px;
+      border-radius: 3px;
+      color: red;
+    }
+  }
+}

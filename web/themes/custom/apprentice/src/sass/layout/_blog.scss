@@ -10,3 +10,51 @@
     }
 
 }
+
+//blog individual page ----title header
+
+.blog-title-individual{
+  .field--name-body{
+    margin-top: 120px;
+    border-bottom: 1px solid black;
+    p{
+      padding-bottom: 15px;
+    }
+  }
+}
+
+//blog individual page --- sub title -- topic
+
+.blog-full-title{
+  margin: 15px 0;
+  font-size: 3em;
+}
+
+//blog individual page --- content
+.blog-full-content{
+  .blog-full-topics{
+    .field--label{
+      font-size: $font-size-med;
+    }
+    .field--item{
+      display: inline-block;
+      font-size: $font-size-med;
+        &::after{
+          content: " and ";
+        }
+        &:last-of-type{
+          &::after{
+            content: ",";
+          }
+        }
+      } //field==item
+    }// blog-full-topics
+    .field--name-field-blog-date{
+        font-size: $font-size-med;
+
+    }
+    .field--name-body{
+      font-size: $font-size-small;
+    }
+
+  }

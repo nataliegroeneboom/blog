@@ -53,6 +53,9 @@
 #}
 <header class="top-header" role="banner">
 <div class="header">
+{% if node.hasField('field_php') == true %}
+   {{ node.field_php.value }}
+  {% endif %}
   <div class="layout-container">
         {{ page.main_navigation }}
   </div>
@@ -110,6 +113,11 @@
         {% block content %}
           <a id="main-content"></a>
           <div class="blogs-taxonomy">
+          Hello
+          {% if node.field_tags.entity.label == "php" %}
+          <h2>Yup, its working</h2>
+          {% endif %}
+          <h1>{{ taxonomy.nid }}</h1>
           {{ page.content }}
           </div>
         {% endblock %}
