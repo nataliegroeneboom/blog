@@ -119,6 +119,16 @@ body {
   border-radius: 3px;
   color: red; }
 
+.blogs-taxonomy {
+  margin-top: 80px; }
+  .blogs-taxonomy h2 {
+    font-size: 40px; }
+  .blogs-taxonomy time {
+    font-size: 20px;
+    font-weight: bold; }
+  .blogs-taxonomy .field--name-body p {
+    font-size: 24px; }
+
 h1 {
   text-align: center;
   margin-top: 20px; }

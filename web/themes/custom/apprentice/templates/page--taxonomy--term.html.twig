@@ -113,12 +113,9 @@
         {% block content %}
           <a id="main-content"></a>
           <div class="blogs-taxonomy">
-          Hello
-          {% if node.field_tags.entity.label == "php" %}
-          <h2>Yup, its working</h2>
-          {% endif %}
-          <h1>{{ taxonomy.nid }}</h1>
-          {{ page.content }}
+            <div class="container">
+                {{ page.content }}
+            </div>    
           </div>
         {% endblock %}
       </section>
