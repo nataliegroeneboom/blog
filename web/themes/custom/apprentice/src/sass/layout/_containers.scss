@@ -82,6 +82,10 @@
         border: 10px solid #fff;
        box-shadow: $colour-shadow;
         margin: 0 auto;
+        transition: 0.08s;
+        &:hover{
+          box-shadow: $colour-shadow-hover;
+        }
 
         }
 

@@ -169,6 +169,11 @@
       color: red;
     }
   }
+  .field--name-body{
+    p{
+      font-size: $font-size-small;
+    }
+  }
 }
 
 //==========================Taxonomy Feed Page   ===============
@@ -187,4 +192,10 @@
       font-size: 24px;
     }
   }
+  .field--name-node-link{
+    a{
+      font-size: $font-size-small;
+    }
+  }
+
 }

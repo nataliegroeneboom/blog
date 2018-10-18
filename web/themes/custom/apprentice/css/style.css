@@ -38,13 +38,13 @@ body {
     font-size: 3em; }
   .intro .views-field-name span p {
     text-align: center;
-    font-size: 2em; }
+    font-size: 1.9em; }
 
 .paragraph-code {
   background-color: #757575;
   font-family: "Share Tech Mono", monospace;
   color: #8FD400;
-  font-size: 2em;
+  font-size: 1.9em;
   width: 75%;
   margin: 15px auto;
   padding: 15px; }
@@ -100,11 +100,11 @@ body {
 
 .blog-grid .views-field-field-blog-date {
   color: #ADA4A6;
-  font-size: 2em; }
+  font-size: 1.9em; }
 
 .paragraph-blog-sub-title {
   font-weight: bold;
-  font-size: 2em; }
+  font-size: 1.9em; }
   .paragraph-blog-sub-title::after {
     content: " ==>"; }
 
@@ -119,6 +119,9 @@ body {
   border-radius: 3px;
   color: red; }
 
+.blog-full-content .field--name-body p {
+  font-size: 1.8em; }
+
 .blogs-taxonomy {
   margin-top: 80px; }
   .blogs-taxonomy h2 {
@@ -128,6 +131,8 @@ body {
     font-weight: bold; }
   .blogs-taxonomy .field--name-body p {
     font-size: 24px; }
+  .blogs-taxonomy .field--name-node-link a {
+    font-size: 1.8em; }
 
 h1 {
   text-align: center;
@@ -146,7 +151,7 @@ h1 {
         border-bottom: 2px solid #000;
         font-size: 2.5em; } }
   .container-about td {
-    font-size: 2em;
+    font-size: 1.9em;
     vertical-align: text-top; }
     .container-about td a {
       color: #000; }
@@ -212,18 +217,18 @@ h1 {
   font-size: 3em; }
 
 .blog-full-content .blog-full-topics .field--label {
-  font-size: 2em; }
+  font-size: 1.9em; }
 
 .blog-full-content .blog-full-topics .field--item {
   display: inline-block;
-  font-size: 2em; }
+  font-size: 1.9em; }
   .blog-full-content .blog-full-topics .field--item::after {
     content: " and "; }
   .blog-full-content .blog-full-topics .field--item:last-of-type::after {
     content: ","; }
 
 .blog-full-content .field--name-field-blog-date {
-  font-size: 2em; }
+  font-size: 1.9em; }
 
 .blog-full-content .field--name-body {
   font-size: 1.8em; }
@@ -306,7 +311,10 @@ h1 {
     width: 240px;
     border: 10px solid #fff;
     box-shadow: 5px 10px 4px 3px rgba(56, 56, 56, 0.6), 2px 4px 2px 5px rgba(142, 142, 142, 0.8);
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: 0.08s; }
+    .topics-covered .topics-wrapper:hover {
+      box-shadow: 0px 0px 1px 1px rgba(56, 56, 56, 0.4), 1px 1px 1px 3px rgba(142, 142, 142, 0.4); }
 
 .grid {
   background: #adad85;
