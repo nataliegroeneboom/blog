@@ -1,7 +1,10 @@
 (function($){
 
-	Drupal.behaviors.myModuleBehavior = {
+	Drupal.behaviors.apprentice = {
 		attach:function(context, settings){
+
+
+
 
 
 			$(".topics-covered.zebra-odd").addClass("col-md-4");

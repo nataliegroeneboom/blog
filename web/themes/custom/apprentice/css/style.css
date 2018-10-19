@@ -26,6 +26,11 @@ body {
   border: solid 1px #EFEFEF;
   padding: 5px; }
 
+.blog-article .views-field-field-resuable-image {
+  grid-area: image;
+  width: 220px;
+  height: 220px; }
+
 .title {
   width: 400px; }
   .title h1 {
@@ -50,16 +55,61 @@ body {
   padding: 15px; }
 
 .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date {
-  font-size: 2.5em;
-  text-transform: uppercase;
   font-weight: bold; }
 
+.views-field.views-field-field-blog-topics-covered {
+  grid-area: tag; }
+  .views-field.views-field-field-blog-topics-covered div ul {
+    list-style: none; }
+    .views-field.views-field-field-blog-topics-covered div ul li {
+      display: inline-block;
+      margin-right: 8px; }
+  .views-field.views-field-field-blog-topics-covered a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #F9CE3F; }
+
+.views-field-field-blog-date {
+  grid-area: author;
+  width: 100px;
+  margin-left: 100px;
+  -ms-flex-item-align: top;
+      align-self: top;
+  position: relative; }
+  .views-field-field-blog-date span {
+    position: absolute;
+    top: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #898989; }
+
+.views-field-uid {
+  grid-area: author;
+  float: left;
+  width: 100px;
+  padding-left: 40px;
+  background-image: url("../src/img/natalie.jpg");
+  background-size: 30px;
+  background-position: left;
+  background-repeat: no-repeat; }
+  .views-field-uid span a {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase; }
+
 .blog-title {
-  font-size: 2.5em;
-  margin-top: 20px; }
+  margin-top: 5px;
+  grid-area: title; }
+  .blog-title span a {
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Patua One', cursive;
+    color: #000; }
 
 .blog-body {
-  font-size: 1.8em; }
+  font-size: 17px;
+  grid-area: text;
+  color: #898989; }
 
 .topics-covered .field-content p {
   font-size: 18px;
@@ -203,9 +253,6 @@ h1 {
       .container-about #experience .work {
         display: none; } }
 
-.blog .topics-wrapper .field-content a {
-  color: #000; }
-
 .blog-title-individual .field--name-body {
   margin-top: 120px;
   border-bottom: 1px solid black; }
@@ -290,8 +337,12 @@ h1 {
         grid-column: 1;
         grid-row: 2 / 3; } }
 
-.blog-article {
-  clear: both;
+.topics-wrapper {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 25px 45px 90px 20px 20px;
+  grid-template-areas: "image tag" "image title" "image text" "image text" "image author";
+  grid-column-gap: 15px;
   margin: 40px 60px;
   min-height: 200px; }
 

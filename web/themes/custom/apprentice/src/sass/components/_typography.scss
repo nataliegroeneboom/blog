@@ -51,20 +51,78 @@
 
 
  .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date{
-        font-size: $font-size-large;
-        text-transform: uppercase;
         font-weight: bold;
 
         }
 
+        .views-field.views-field-field-blog-topics-covered{
+          grid-area: tag;
+          div ul{
+            list-style: none;
+            li{
+              display: inline-block;
+              margin-right: 8px;
+            }
+          }
+
+
+          a{
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #F9CE3F;
+          }
+        }
+        .views-field-field-blog-date{
+          grid-area: author;
+          width: 100px;
+          margin-left: 100px;
+          align-self: top;
+          position: relative;
+          span{
+            position: absolute;
+            top: 2px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #898989;
+          }
+
+        }
+        .views-field-uid{
+    //      padding-top: 12px;
+          grid-area: author;
+          float: left;
+          width: 100px;
+        //  margin-top: 40px;
+          padding-left: 40px;
+          background-image:url('../src/img/natalie.jpg');
+          background-size: 30px;
+          background-position: left;
+          background-repeat: no-repeat;
+          span a{
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+
+
    .blog-title{
-        font-size: $font-size-large;
-        margin-top: 20px;
+
+        margin-top: 5px;
+        grid-area: title;
+        span a{
+          font-size: 27px;
+          font-weight: 700;
+          font-family: 'Patua One', cursive;
+          color: #000;
+
+        }
         }
    .blog-body{
 
-   font-size: $font-size-small;
-
+   font-size: 17px;
+   grid-area: text;
+   color: #898989;
         }
 
 .topics-covered{

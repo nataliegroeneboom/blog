@@ -49,8 +49,17 @@
 
 
 
-.blog-article{
-    clear: both;
+.topics-wrapper{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 25px 45px 90px 20px 20px;
+    grid-template-areas:
+    "image tag"
+    "image title"
+    "image text"
+    "image text"
+    "image author";
+    grid-column-gap: 15px;
     margin: 40px 60px;
     min-height: 200px;
 

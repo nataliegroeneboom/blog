@@ -109,13 +109,21 @@
           {% endblock %}
         {% endif %}
 
+
+
         {# Content #}
+
         {% block content %}
           <a id="main-content"></a>
           <div class="blogs-taxonomy">
             <div class="container">
+
+            {% set foo = render_var(url('<current>'))|split('/')|last|upper %}
+
+
+         <h1 id="regex">{{ foo }}</h1>
                 {{ page.content }}
-            </div>    
+            </div>
           </div>
         {% endblock %}
       </section>

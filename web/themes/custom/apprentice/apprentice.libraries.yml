@@ -1,5 +1,6 @@
 global-styling:
   version: VERSION
+  header: true
   css:
     theme:
       css/style.css: {}
@@ -7,8 +8,9 @@ global-styling:
     src/js/main.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
 
 fonts:
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Marvel:400,400i,700,700i|Pompiere|Share+Tech+Mono|Share:400,400i,700,700i': { type: external }
+      '//fonts.googleapis.com/css?family=Marvel:400,400i,700,700i|Pompiere|Share+Tech+Mono|Share:400,400i,700,700i|Patua+One': { type: external }
