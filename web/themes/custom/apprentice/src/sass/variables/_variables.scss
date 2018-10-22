@@ -11,6 +11,8 @@ $cola					  : #3D1F00;
 $nobel					: #ADA4A6;
 $sheen-green    : #8FD400;
 $sonic-silver   : #757575;
+$tag-yellow     : #F9CE3F;
+$font-grey      : #898989;
 
 $colour-body			   : $cream;
 $colour-tutorial		: $sonic-silver;
@@ -22,8 +24,10 @@ $colour-shadow-hover    :  0px 0px 1px 1px rgba(56, 56, 56, 0.4),
                     		1px 1px 1px 3px rgba(142, 142, 142, 0.4);
 $colour-borderline		: $alto;
 $colour-border-shadow	: 0px 1px 1px $alto;
-$font-size-showcase		: 3em;
+$font-size-showcase		: 40px;
 $font-size-large		: 2.5em;
+$font-size-text     : 21px;
+$font-size-subheading: 25px;
 $font-size-med			: 1.9em;
 $font-size-small		: 1.8em;
 $font-size-vsmall		: 1em;
@@ -37,6 +41,7 @@ $stack-sans-serif		:'Marvel', sans-serif;
 $stack-monospace		: 'Share Tech Mono', monospace;
 $stack-pomp				: 'Pompiere', cursive;
 $stack-share			: 'Share', cursive;
+$stack-pat        : 'Patua One', cursive;
 
 
 //margin and padding

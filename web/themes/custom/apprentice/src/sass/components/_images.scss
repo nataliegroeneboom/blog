@@ -1,10 +1,15 @@
 .intro{
   .region-content{
     img{
-      width: 100%;
+    //  width: 100%;
       height: auto;
       border: solid 1px #EFEFEF;
       padding: 5px;
+      @include phone{
+        padding: 0 14px 0 0;
+        border: none;
+        float: left;
+      }
     }
   }
 }
@@ -16,5 +21,10 @@
 grid-area: image;
 width: 220px;
 height: 220px;
+      @include phone{
+        width: 120px;
+        height: 120px;
+        float: left;
+      }
   }
 }

@@ -2,16 +2,44 @@
 
 .title{
   @extend %center;
-  width: 400px;
-  h1{
-    text-align: center;
-  }
+  font-family: $stack-pat;
+  margin-top: 25px;
+ @include phone{
+   margin-top: 75px;
+ }
 }
 
 
 
 .intro{
-      font-size: $font-size-showcase;
+  .views-field-title{
+
+    a{
+      color: black;
+      font-family: $stack-pat;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .views-field-field-blog-topics-covered{
+    a{
+      color: $tag-yellow;
+      font-weight: bold;
+      font-size:15px;
+      text-transform: uppercase;
+    }
+  }
+  .views-field-uid{
+    font-size: 15px;
+    a{
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #0000ff;
+    }
+  }
+
+
+font-size: 14px;
 
 
 
@@ -42,96 +70,141 @@
   background-color: $colour-tutorial;
   font-family: $stack-monospace;
   color:  $font-code;
-  font-size: $font-size-med;
+  font-size: 18px;
   width: 75%;
   margin: 15px auto;
   padding: 15px;
 }
 
 
+//====================BLOG PAGE====================================================//
+//=================================================================================//
+.blog, .blogs-taxonomy{
 
- .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date{
-        font-weight: bold;
 
-        }
 
-        .views-field.views-field-field-blog-topics-covered{
-          grid-area: tag;
-          div ul{
-            list-style: none;
-            li{
-              display: inline-block;
-              margin-right: 8px;
+         .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date{
+                font-weight: bold;
+
+                }
+
+                .views-field.views-field-field-blog-topics-covered{
+                  grid-area: tag;
+
+
+                  div ul{
+                    list-style: none;
+                    li{
+                      display: inline-block;
+                      margin-right: 8px;
+                    }
+                  }
+
+
+                  a{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $tag-yellow;
+                  }
+                }
+                .views-field-field-blog-date{
+                  grid-area: author;
+                  width: 100px;
+                  margin-left: 100px;
+                  align-self: top;
+                  position: relative;
+                  @include phone{
+                    margin-left: 12px;
+                    width: inherit;
+                  }
+                  span{
+                    position: absolute;
+                    top: 12px;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: #898989;
+                    @include phone{
+                      display: inherit;
+                      width: 100%;
+                    }
+                  }
+
+                }
+                .views-field-uid{
+
+                  grid-area: author;
+                  float: left;
+                  width: 100px;
+                  padding-left: 40px;
+                  position: relative;
+                  span{
+                    position: absolute;
+                    bottom: 0px;
+                  }
+                  span.field-content{
+                    right: 10px;
+                  }
+                  span a{
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                  }
+                  @include phone{
+                    display: none;
+                  }
+                }
+
+
+           .blog-title, .views-field-title{
+
+                margin-top: 5px;
+                grid-area: title;
+                span a{
+                  font-size: 27px;
+                  font-weight: 700;
+                  font-family: 'Patua One', cursive;
+                  color: #000;
+                  @include phone{
+                    font-size: 19px;
+                    line-height: 1.1;
+                  }
+
+                }
+                }
+           .blog-body, .views-field-body{
+
+           font-size: 17px;
+           grid-area: text;
+           color: #898989;
+           @include phone{
+             display: none;
+
+           }
+                }
+//title==>
+        .topics-covered{
+          .field-content{
+            p{
+              font-size: 18px;
+              text-align: center;
+            }
+            @include phone{
+              display: none;
             }
           }
-
-
-          a{
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #F9CE3F;
-          }
         }
-        .views-field-field-blog-date{
-          grid-area: author;
-          width: 100px;
-          margin-left: 100px;
-          align-self: top;
-          position: relative;
-          span{
-            position: absolute;
-            top: 2px;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #898989;
-          }
-
-        }
-        .views-field-uid{
-    //      padding-top: 12px;
-          grid-area: author;
-          float: left;
-          width: 100px;
-        //  margin-top: 40px;
-          padding-left: 40px;
-          background-image:url('../src/img/natalie.jpg');
-          background-size: 30px;
-          background-position: left;
-          background-repeat: no-repeat;
-          span a{
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-          }
+//user picture==>
+        .views-field-user-picture{
+            grid-area: author;
+            img{
+              -webkit-clip-path: circle(50% at 50% 50%);
+              clip-path: circle(50% at 50% 50%);
+            }
+            @include phone{
+              display: none;
+            }
         }
 
-
-   .blog-title{
-
-        margin-top: 5px;
-        grid-area: title;
-        span a{
-          font-size: 27px;
-          font-weight: 700;
-          font-family: 'Patua One', cursive;
-          color: #000;
-
-        }
-        }
-   .blog-body{
-
-   font-size: 17px;
-   grid-area: text;
-   color: #898989;
-        }
-
-.topics-covered{
-  .field-content{
-    p{
-      font-size: 18px;
-      text-align: center;
-    }
-  }
 }
 
 
@@ -140,7 +213,7 @@
    .recent-blog{
 
     .views-field-field-blog-date, .views-field-title{
-        font-size: $font-size-small;
+    //    font-size: $font-size-small;
         font-weight: bold;
 
 
@@ -168,10 +241,10 @@
 
 
     .views-field-field-blog-date{
-      &::after{
-        content: " | ";
-        font-size: 30px;
-      }
+      // &::after{
+      //   content: " | ";
+      //   font-size: 30px;
+      // }
     }
 
 
@@ -206,6 +279,7 @@
       .paragraph-blog-sub-title{
         font-weight: bold;
         font-size: $font-size-med;
+        margin-top: 43px;
         &::after{
           content: " ==>";
         }
@@ -214,10 +288,10 @@
   //==========================Blog individual paragraph layout===============
 .blog-full-content{
   .field-paragraph-paragraph{
-
-    p{
-      font-size: $font-size-small;
+    p, li{
+      font-size: $font-size-text
     }
+
     span{
       font-weight: bold;
       background-color: #D3D3D3;
@@ -227,11 +301,7 @@
       color: red;
     }
   }
-  .field--name-body{
-    p{
-      font-size: $font-size-small;
-    }
-  }
+
 }
 
 //==========================Taxonomy Feed Page   ===============

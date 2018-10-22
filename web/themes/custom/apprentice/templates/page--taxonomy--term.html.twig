@@ -141,9 +141,13 @@
 {% endblock %}
 
 {% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
+      <footer role="contentinfo" class="taxonomy-footer">
+          <div class="container">
+              <div class="footer-grid">
+                <a class="icons" href="https://github.com/nataliegroeneboom" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a class="icons" href="https://www.linkedin.com/in/natalie-groeneboom-07110351/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="icons" href="https://www.flickr.com/" target="_blank"><i class="fab fa-flickr"></i></a>
+              </div>
+          </div>
+      </footer>
 {% endif %}

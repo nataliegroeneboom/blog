@@ -50,7 +50,7 @@
           {{ page.main_navigation }}
     </div>
   </div>
-  <div class="layout-container"> 
+  <div class="layout-container">
   <div class="banner">
       {{ page.header }}
   </div>
@@ -65,11 +65,11 @@
 <div class="layout-container">
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
- 
+
     <div class="layout-content-top">
        <div class="container-fluid">
           <div class= "col-sm-12 blog"> {{ page.content }} </div>
-      </div> {# /.container-fluid #} 
+      </div> {# /.container-fluid #}
     </div>{# /.layout-content-top #}
 
     {% if page.sidebar_first %}
@@ -103,9 +103,15 @@
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
+  <footer role="contentinfo">
+  <div class="container">
+  <div class="footer-grid">
+    <a class="icons" href="https://github.com/nataliegroeneboom" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a class="icons" href="https://www.linkedin.com/in/natalie-groeneboom-07110351/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a class="icons" href="https://www.flickr.com/" target="_blank"><i class="fab fa-flickr"></i></a>
+  </div>
+  </div>
+  </footer>
   {% endif %}
 
 </div>{# /.layout-container #}

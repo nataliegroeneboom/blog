@@ -3,10 +3,23 @@
 body{
   margin: 0;
   padding: 0;
-  padding-top: 79px;
+  //padding-top: 79px;
   background-color: $cream;
   font-family: $stack-sans-serif;
   overflow-x: hidden;
   border: 12px solid black;
+ @include phone{
+   border: none;
+   padding-top: none;
+ }
+}
 
+.container{
+  @include desktop{
+    width: 1000px;
+  }
+}
+
+li.print{
+  display: none;
 }

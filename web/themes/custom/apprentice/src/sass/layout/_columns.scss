@@ -15,39 +15,17 @@
 
 	@include phone {
 
-		.intro, .side{
+		.intro{
 	display: inline-block;
 	vertical-align: top;
-	padding: 0 18px;
+//	padding: 0 18px;
+
 			}
 
-		.side{
-			width: 35%;
-		//	background-color: $colour-body;
-
-			.block-title{
-			color: $black;
-			}
-			.views-field-field-resuable-image{
-					width: 220px;
-					padding: 15px 20px 15px 0px;
-					display: block;
-					float: left;
-					img{
-
-						border: 2px solid $black;
-
-						}
-			}
-		}
 
 
 		.intro{
-			width: 60%;
-
-
 	color: $black;
-
 		}
 
 
