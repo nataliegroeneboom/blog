@@ -7,7 +7,6 @@ body{
   background-color: $cream;
   font-family: $stack-lora;
   overflow-x: hidden;
-  border: 12px solid black;
  @include phone{
    border: none;
    padding-top: none;

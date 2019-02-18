@@ -1,8 +1,10 @@
-
+.region-showcase{
+ border-top: 3px solid black;
+}
 
 
 .layout-container{
-  @extend %center-layout;
+//  @extend %center-layout;
   @extend %center;
 }
 
