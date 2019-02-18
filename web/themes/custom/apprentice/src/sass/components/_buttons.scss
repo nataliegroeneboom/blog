@@ -17,3 +17,16 @@
         }
 
     }
+
+    #block-apprentice-search{
+      margin-top: 85px;
+        .input-group{
+          width: 270px;
+          input{
+            border-radius: 0px;
+          }
+          span > button{
+            background: black;
+          }
+        }
+    }
