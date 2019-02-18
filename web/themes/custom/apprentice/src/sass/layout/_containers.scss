@@ -9,11 +9,6 @@
 }
 
 
-.layout-content-top{
-
-  border-bottom: 2px solid $colour-borderline;
-  box-shadow: $colour-border-shadow;
-}
 
 //===========recent-blogs mobile views===================
 #block-views-block-blogs-recent-block-1{
@@ -170,7 +165,6 @@
 
    .grid{
 
-    background: #adad85;
     margin: 0 auto;
    }
 
@@ -178,7 +172,6 @@
     .blog-grid{
 
       height: 570px;
-     // max-width: 360px;
       background: $white;
       margin:  4px 4px;
 

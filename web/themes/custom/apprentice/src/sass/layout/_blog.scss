@@ -1,15 +1,4 @@
-.blog{
 
-
-    .topics-wrapper{
-      .field-content{
-        a{
-          //color: $font-colour-prim;
-        }
-      }
-    }
-
-}
 
 //blog individual page ----title header
 
@@ -26,16 +15,13 @@
       position: relative;
     }
   }
-  .title{
-
-  }
+ 
 }
 
 //blog individual page --- sub title -- topic
 
 .blog-full-title{
   margin: 15px 0;
-  font-size: $font-size-showcase;
   @include phone{
     font-size: 24px;
   }
@@ -44,9 +30,7 @@
 //blog individual page --- content
 .blog-full-content{
 
-      .field--name-field-resuable-image{
-
-      }
+     
 
 
 
@@ -109,7 +93,4 @@
       }
   }
 
-  .recent-blog{
-    margin: 0 auto;
-    max-width: 1000px;
-  }
+ 
