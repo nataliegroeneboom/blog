@@ -42,9 +42,11 @@
 
 {% endif %}
     
-  <div{{ row.attributes.addClass(row_classes) }}>
+  <div>
    <div class="topics-wrapper">
     {{ row.content }}
     </div>
   </div>
 {% endfor %}
+
+{#   {{ row.attributes.addClass(row_classes) }}  #}

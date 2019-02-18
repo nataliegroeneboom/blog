@@ -7,9 +7,10 @@
 
 
 
-			$(".topics-covered.zebra-odd").addClass("col-md-4");
-			$(".topics-covered.zebra-even").addClass("col-md-4");
+		//	$(".topics-covered.zebra-odd").addClass("col-md-4");
+		//	$(".topics-covered.zebra-even").addClass("col-md-4");
 			$("#block-apprentice-main-menu").addClass("navbar");
+			$('.view-topics-covered .view-content>div').addClass('topic');
 
 
 
