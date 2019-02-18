@@ -33,22 +33,23 @@
 
 
 
-  section.block-system-branding-block{
-  display: inline-block;
-  float: left;
-  }
+  
+
+ 
+
 
   #block-apprentice-main-menu{
   display: inline-block;
-  float: right;
+ // float: right;
   width: 100vw;
   background: black;
   position: fixed;
   z-index: 20;
+  top: 0;
   }
 
 
-    .main-menu, .slogan{
+    .main-menu{
 
 
           li{
@@ -131,10 +132,7 @@
   width: 100vw;
  
 
-  .topic{
- float: left;
- display: inline;
-  }
+
 }
 
 
@@ -150,3 +148,41 @@
     }
   }
   }
+
+  section.block-system-branding-block{
+    display: inline-block;
+    margin-top: 75px;
+      .slogan-name >a{
+        color: black;
+        font-size: 30px;
+      }
+    }
+
+    #block-apprentice-search{
+      display: inline-block;
+      float: right;
+    }
+
+    
+
+    .topic{
+      float: left;
+      display: inline;
+      p{
+        text-transform: uppercase;
+        margin-right: 8px;
+        letter-spacing: 0.16em;
+        font-size: 13px;
+        font-weight: bold;
+        &::before{
+          content: " \\ ";
+        }
+      }
+   
+       }
+
+       
+       .topic.first-topic p::before{
+        content: "";
+       }
+       
