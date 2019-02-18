@@ -10,27 +10,20 @@
     @extend %clearfix;
     width: 100%;
 
-
-        .layout-container{
-
-
-            nav, div.block-apprentice-branding{
-
-            }
-
-
-    }
-
- .main-menu, .slogan{
-
+  .slogan{
+    list-style-type: none;
+    font-family: 'Over the Rainbow', cursive;
+    text-align: center;
+    color: black;
+  }
+ .main-menu{
+      margin-top: 10px;
       list-style-type: none;
       text-align: center;
 
         li{
-          padding: 5px 0;
-          a{
-            color: $black;
-          }
+          padding: 2px 0;
+        
         }
 
     }
@@ -48,12 +41,15 @@
   #block-apprentice-main-menu{
   display: inline-block;
   float: right;
+  width: 100vw;
+  background: black;
+  position: fixed;
+  z-index: 20;
   }
 
 
     .main-menu, .slogan{
-    //  width:: 100%;
-   //  display: inline-block;
+
 
           li{
             display: inline-block;
@@ -128,6 +124,19 @@
 }// end of mobile view
 
 
+//topics covered
+.block-views-blocktopics-covered-block-1{
+  float: left;
+  clear: right;
+  width: 100vw;
+ 
+
+  .topic{
+ float: left;
+ display: inline;
+  }
+}
+
 
 
 }//end of header
@@ -136,5 +145,8 @@
   .banner{
     width: 100%;
     height: 200px;
+    .parallax{
+      height: 340px;
+    }
   }
   }
