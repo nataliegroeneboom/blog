@@ -30,7 +30,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('main-menu') }}>
+      <ul{{ attributes.addClass('main-menu navbar-nav mr-auto') }}>
     {% else %}
       <ul class="main-menu">
     {% endif %}
@@ -42,7 +42,8 @@
           item.is_expanded ? 'menu-item--expanded',
           item.is_collapsed ? 'menu-item--collapsed',
           item.in_active_trail ? 'menu-item--active-trail',
-          menu_attributes.item.class ? menu_attributes.item.class
+          menu_attributes.item.class ? menu_attributes.item.class,
+          'nav-item'
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}

@@ -12,7 +12,11 @@
 			$("#block-apprentice-main-menu").addClass("navbar");
 			$('.view-topics-covered .view-content>div').addClass('topic');
 			$('.view-topics-covered .view-content>div:first-child').addClass('first-topic');
+			$('.collapse').collapse();
 
+				if($('.layout-sidebar').find('.view-content')){
+					$('.layout-sidebar').addClass('checking');
+				}
 
 
 

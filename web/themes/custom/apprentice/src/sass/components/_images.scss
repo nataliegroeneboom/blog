@@ -5,9 +5,10 @@
       height: auto;
       padding: 5px;
       @include phone{
-        padding: 0 14px 0 0;
+        //padding: 0 14px 0 0;
         border: none;
         float: left;
+        padding: 0px;
       }
     }
   }
@@ -49,18 +50,37 @@
   
 }
 
-.blog-article{
+.view-blogs-recent{
 
 
   .views-field-field-resuable-image{
     img{
-      filter: brightness(50%);
+      filter: brightness(150%);
     }
 
       @include phone{
-        width: 120px;
-        height: 120px;
-        float: left;
+
       }
   }
+}
+
+
+//============= aside images in related posts =============
+
+aside.layout-sidebar{
+  .views-field-field-resuable-image{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.25);
+ 
+
+  }
+
+}
 }

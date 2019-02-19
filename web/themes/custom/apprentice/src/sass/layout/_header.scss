@@ -6,6 +6,7 @@
   @include phone{
     height: 250px;
   }
+}
 
   .header{
     @extend %clearfix;
@@ -41,7 +42,7 @@
 
   #block-apprentice-main-menu{
   display: inline-block;
- // float: right;
+ 
   width: 100vw;
   background: black;
   position: fixed;
@@ -67,6 +68,11 @@
   display: none;
 }
 
+//large screen navigation 
+
+
+
+
 @include phone{
   .navbar{
 
@@ -80,9 +86,7 @@
 
     .main-menu{
 
-                 .menu-item{
-                   &:not(:first-child) {display: none;}
-                 }
+                 
                  .icon{
                    float: right;
                    display: block;
@@ -148,7 +152,7 @@
       height: 340px;
     }
   }
-  }
+  
 
   section.block-system-branding-block{
     display: inline-block;
@@ -157,6 +161,19 @@
         color: black;
         font-size: 30px;
       }
+
+    @include phone{
+      position: fixed;
+      top: 17px;
+      left: 2px;
+      z-index: 25;
+      margin-top: 0;
+    
+      .slogan-name > a{
+        color: white;
+        font-size: 14px;
+      }
+    }
     }
 
     #block-apprentice-search{
@@ -169,12 +186,13 @@
     .topic{
       float: left;
       display: inline;
-      p{
+      a{
         text-transform: uppercase;
         margin-right: 8px;
         letter-spacing: 0.16em;
         font-size: 13px;
         font-weight: bold;
+        font-color: black;
         &::before{
           content: " // ";
         }
@@ -183,7 +201,18 @@
        }
 
        
-       .topic.first-topic p::before{
+       .topic.first-topic a::before{
         content: "";
        }
+
+
+       //===========NAVIGATION BAR
+
+       @media(min-width:970px){
+        button.navbar{
+          display: none !important;
+        }
+       
+       }
+
        

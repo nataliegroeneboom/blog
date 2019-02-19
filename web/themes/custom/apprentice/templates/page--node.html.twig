@@ -44,39 +44,33 @@
  */
 #}
 
-  <header class="top-header" role="banner">
-  <div class="header">
-    <div class="layout-container">
-          {{ page.main_navigation }}
-    </div>
-  </div>
-  <div class="layout-container">
-  <div class="banner">
-      {{ page.header }}
-  </div>
-    </div>
-  </header>
+
+{% include '@apprentice/partials/header-page.html.twig'%}
 
 
 
 
 
 
-<div class="layout-container">
+<div class="container">
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content-top">
-       <div class="container">
-      {{ page.content }}
-      </div> {# /.container#}
-    </div>{# /.layout-content-top #}
+    <div class="layout-content-top individual-page">
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
+
+      {{ page.content }}
+
+      
+   
+
+    {% if page.sidebar %}
+      <aside class="layout-sidebar" role="complementary">
+        {{ page.sidebar }}
       </aside>
     {% endif %}
+
+     </div>{# /.layout-content-top #}
 
     {% if page.content_secondary %}
     <div class="layout-content-sec">

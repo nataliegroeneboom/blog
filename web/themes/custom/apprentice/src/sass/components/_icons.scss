@@ -1,1 +1,26 @@
 
+#block-apprentice-main-menu{
+   span{
+       float: right;
+       margin: 20px;
+       .fa-bars{
+           color: white;
+           font-size: 25px;
+       }
+   } 
+
+   .collapse:not(.in){
+   display: none;
+   }
+   .collapse.in{
+    margin: 80px;
+    .navbar-nav{
+        height: 160px;       
+        .nav-item{      
+            display: block;
+            margin: 15px 0;
+        }
+    }
+   }
+}
+

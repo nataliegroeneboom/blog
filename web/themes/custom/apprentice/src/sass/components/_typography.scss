@@ -1,9 +1,11 @@
 
 
 .title{
-  @extend %center;
-  font-family: $stack-pat;
+  font-family: $stack-lora;
   margin-top: 25px;
+  font-size: 40px;
+  text-transform: capitalize;
+  text-align: left;
  @include phone{
    margin-top: 75px;
  }
@@ -14,13 +16,34 @@
   color: white;
   background: black;
   text-transform: uppercase;
-  font-size: $font-size-small;
+  font-size: 18px;
   padding: 12px 7px;
   letter-spacing: 0.12em;
 
   &::before{
     content: "//";
     padding: 7px;
+  }
+
+}
+
+//==================== RELATED BLOGS ==================
+aside.layout-sidebar{
+  .views-field-title, .views-field-body{
+    margin-top: 12px;
+    a{
+      color: black;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  .views-field-title a{
+    font-size: 24px;
+  }
+
+  .views-field-body a{
+    font-size: 14px;
   }
 
 }
@@ -238,10 +261,6 @@ font-size: 14px;
         font-size: $font-size-vsmall;
        }
 
-      h2{
-        font-size: $font-size-subtitle;
-        text-align: center;
-      }
 
 
 
