@@ -60,7 +60,7 @@
 
     <div class="layout-content-top">
        <div class="introduction">
-        <div class= "intro"> {{ page.content }} </div>
+        <div class= "intro container"> {{ page.content }} </div>
       </div> {# /.container-fluid #}
     </div>{# /.layout-content-top #}
 
@@ -80,9 +80,9 @@
 
     {% if page.content_secondary %}
     <div class="layout-content-sec">
-       <div class="container-fluid">
+       <div class="container">
         {{ page.content_secondary }}
-        </div> {# /.container-fluid #}
+        </div> {# /.container #}
     </div>{# /.layout-content-sec #}
 
     {% endif %}

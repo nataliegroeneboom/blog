@@ -11,7 +11,7 @@ h1{
   padding-bottom: 35px;
 
   h2{
-    font-size: $font-size-showcase;
+    font-size: $font-size-subtitle;
     @include phone{
       border-bottom: 2px solid #000;
       font-size: $font-size-large;

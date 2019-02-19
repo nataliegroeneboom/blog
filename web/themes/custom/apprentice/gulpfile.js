@@ -1,15 +1,15 @@
-'use strict';
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var importer = require('node-sass-globbing');
-//var plumber = require('gulp-plumber');
-var browserSync = require('browser-sync').create();
-var cssmin = require('gulp-cssmin');
-var uncss = require('gulp-uncss');
+var plumber = require('gulp-plumber');
+//var browserSync = require('browser-sync').create();
+//var cssmin = require('gulp-cssmin');
+//var uncss = require('gulp-uncss');
 var stripCssComments = require('gulp-strip-css-comments');
-var uglify = require('gulp-uglify');
+//var uglify = require('gulp-uglify');
 var livereload = require('gulp-livereload')
 var sass_config = {
   importer: importer,

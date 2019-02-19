@@ -44,25 +44,14 @@
  */
 #}
 
-  <header class="top-header" role="banner">
-  <div class="header">
-    <div class="layout-container">
-          {{ page.main_navigation }}
-    </div>
-  </div>
-  <div class="layout-container">
-  <div class="banner">
-      {{ page.header }}
-  </div>
-    </div>
-  </header>
+{% include '@apprentice/partials/hero.html.twig'%}
 
 
 
 
 
 
-<div class="layout-container">
+<div class="container">
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
@@ -114,4 +103,4 @@
   </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div>{# /.container #}

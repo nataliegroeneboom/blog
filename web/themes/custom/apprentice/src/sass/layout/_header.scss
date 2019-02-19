@@ -2,9 +2,11 @@
 
 .top-header{
   height: 400px;
+  margin-bottom: 250px;
   @include phone{
     height: 250px;
   }
+}
 
   .header{
     @extend %clearfix;
@@ -40,7 +42,11 @@
 
   #block-apprentice-main-menu{
   display: inline-block;
+<<<<<<< HEAD
  // float: right;
+=======
+ 
+>>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
   width: 100vw;
   background: black;
   position: fixed;
@@ -66,6 +72,11 @@
   display: none;
 }
 
+//large screen navigation 
+
+
+
+
 @include phone{
   .navbar{
 
@@ -79,9 +90,7 @@
 
     .main-menu{
 
-                 .menu-item{
-                   &:not(:first-child) {display: none;}
-                 }
+                 
                  .icon{
                    float: right;
                    display: block;
@@ -147,7 +156,11 @@
       height: 340px;
     }
   }
+<<<<<<< HEAD
   }
+=======
+  
+>>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
 
   section.block-system-branding-block{
     display: inline-block;
@@ -156,6 +169,22 @@
         color: black;
         font-size: 30px;
       }
+<<<<<<< HEAD
+=======
+
+    @include phone{
+      position: fixed;
+      top: 17px;
+      left: 2px;
+      z-index: 25;
+      margin-top: 0;
+    
+      .slogan-name > a{
+        color: white;
+        font-size: 14px;
+      }
+    }
+>>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
     }
 
     #block-apprentice-search{
@@ -168,21 +197,48 @@
     .topic{
       float: left;
       display: inline;
+<<<<<<< HEAD
       p{
+=======
+      a{
+>>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
         text-transform: uppercase;
         margin-right: 8px;
         letter-spacing: 0.16em;
         font-size: 13px;
         font-weight: bold;
+<<<<<<< HEAD
         &::before{
           content: " \\ ";
+=======
+        font-color: black;
+        &::before{
+          content: " // ";
+>>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
         }
       }
    
        }
 
        
+<<<<<<< HEAD
        .topic.first-topic p::before{
         content: "";
        }
+=======
+       .topic.first-topic a::before{
+        content: "";
+       }
+
+
+       //===========NAVIGATION BAR
+
+       @media(min-width:970px){
+        button.navbar{
+          display: none !important;
+        }
+       
+       }
+
+>>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
        

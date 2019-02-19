@@ -19,6 +19,11 @@
 	 				}
 			}
 
+	@mixin small-screen{
+		@media(max-width: #{$tablet - 1px}){
+			@content;
+		}
+	}		
 	@mixin tablet-landscape{
 		@media(min-width: #{$tablet}){
 		 @content;

@@ -1,30 +1,86 @@
 .intro{
   .region-content{
     img{
-    //  width: 100%;
+
       height: auto;
-      border: solid 1px #EFEFEF;
       padding: 5px;
       @include phone{
-        padding: 0 14px 0 0;
+        //padding: 0 14px 0 0;
         border: none;
         float: left;
+        padding: 0px;
       }
     }
   }
 }
 
-.blog-article{
+
+.view-topics-block{
+
+  .topics-grid{
+    position: relative;
+    margin-bottom: 12px;
+    .views-field-name{
+      position: absolute;
+      top: 65%;
+      left: 20px;
+      padding: 7px;
+      background: black;
+      z-index: 10;
+      span a{
+        font-size: 14px;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+    }
+  }
+
+  img{
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: greyscale(80%);
+    -webkit-transition: filter 0.7s;
+    transition: filter 1s;
+    &:hover{
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: greyscale(0%);
+    }
+  }
+
+  
+}
+
+.view-blogs-recent{
 
 
   .views-field-field-resuable-image{
-grid-area: image;
-width: 220px;
-height: 220px;
+    img{
+      filter: brightness(150%);
+    }
+
       @include phone{
-        width: 120px;
-        height: 120px;
-        float: left;
+
       }
   }
+}
+
+
+//============= aside images in related posts =============
+
+aside.layout-sidebar{
+  .views-field-field-resuable-image{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.25);
+ 
+
+  }
+
+}
 }
