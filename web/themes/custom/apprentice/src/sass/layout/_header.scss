@@ -14,19 +14,15 @@
 
   .slogan{
     list-style-type: none;
-    font-family: 'Over the Rainbow', cursive;
     text-align: center;
     color: black;
   }
  .main-menu{
-      margin-top: 10px;
-      list-style-type: none;
+      margin-top: 100px;
+      list-style: none;
       text-align: center;
+      padding-left: 0px;
 
-        li{
-          padding: 2px 0;
-        
-        }
 
     }
 
@@ -116,7 +112,7 @@
   .slogan{
     padding-left: 0px;
     li{
-
+      list-style: none;
       width: 120px;
       a{
        font-size: 22px;
@@ -160,9 +156,10 @@
       .slogan-name >a{
         color: black;
         font-size: 30px;
+        text-decoration: none;
       }
 
-    @include phone{
+    @media(max-width:760px){
       position: fixed;
       top: 17px;
       left: 2px;
@@ -177,7 +174,7 @@
     }
 
     #block-apprentice-search{
-      display: inline-block;
+      //display: inline-block;
       float: right;
     }
 
@@ -185,14 +182,14 @@
 
     .topic{
       float: left;
-      display: inline;
+      //display: inline;
       a{
         text-transform: uppercase;
         margin-right: 8px;
         letter-spacing: 0.16em;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
-        font-color: black;
+        color: black;
         &::before{
           content: " // ";
         }
@@ -208,7 +205,7 @@
 
        //===========NAVIGATION BAR
 
-       @media(min-width:970px){
+       @media(min-width:767px){
         button.navbar{
           display: none !important;
         }

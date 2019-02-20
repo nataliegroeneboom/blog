@@ -44,7 +44,7 @@
  */
 #}
 
-{% include '@apprentice/partials/hero.html.twig'%}
+{% include '@apprentice/partials/header-page.html.twig'%}
 
 
 
@@ -55,10 +55,8 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content-top">
-       <div class="container-fluid">
+    <div class="layout-content-top">   
           <div class= "col-sm-12 blog"> {{ page.content }} </div>
-      </div> {# /.container-fluid #}
     </div>{# /.layout-content-top #}
 
     {% if page.sidebar_first %}

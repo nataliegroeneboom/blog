@@ -1,8 +1,10 @@
 
+//=======================INDIVIDUAL BLOG PAGE===========================================
+
 
 //blog individual page ----title header
-.header .banner{
-  margin-bottom: 30px;
+ .banner{
+  margin: 30px 0px;
 }
 
 .individual-page{
@@ -79,6 +81,8 @@
 
   //author information
 
+
+
   .author-info{
     margin-bottom: 55px;
       .field--name-user-picture{
@@ -100,3 +104,45 @@
   }
 
  
+//======================= END INDIVIDUAL BLOG PAGE===========================================
+
+//======================= START BLOG PAGE===========================================
+
+.blog, .blogs-taxonomy{
+  padding-left: 0;
+  .topics-wrapper{
+    height: inherit;
+    @media(max-width:760px){
+      margin-bottom: 30px;
+    }
+  }
+  .view-content>div{
+
+    @media(min-width: 760px){
+      clear: both;
+      height: 250px;
+      margin: 0 30px 30px 0;
+      position: relative;
+    }
+  
+
+  }
+  .views-field-field-resuable-image{
+    @media(min-width: 760px){
+      float: left;
+      margin-right: 30px;
+    }
+
+
+    @media(min-width:761px) and (max-width:992px){
+      width: 50%;
+    }
+    @media(max-width: 759px){
+      img{
+        width: 100%;
+      }
+      margin-bottom: 15px;
+    }
+   
+  }
+}

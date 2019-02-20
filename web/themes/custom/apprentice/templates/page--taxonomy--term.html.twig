@@ -51,23 +51,7 @@
  * @see html.html.twig
  */
 #}
-<header class="top-header" role="banner">
-<div class="header">
-{% if node.hasField('field_php') == true %}
-   {{ node.field_php.value }}
-  {% endif %}
-  <div class="layout-container">
-        {{ page.main_navigation }}
-  </div>
-</div>
-<div class="layout-container">
-<div class="banner">
-    {{ page.header }}
-</div>
-
-  </div>
-
-</header>
+{% include '@apprentice/partials/header-page.html.twig'%}
 
 {# Main #}
 {% block main %}

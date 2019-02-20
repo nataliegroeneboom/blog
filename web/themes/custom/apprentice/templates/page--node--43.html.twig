@@ -4,29 +4,28 @@
 
 
 
-  <header class="top-header" role="banner">
-  <div class="header">
-    <div class="layout-container">
-          {{ page.main_navigation }}
-    </div>
-  </div>
-  <div class="layout-container">
-  <div class="banner">
-      {{ page.header }}
-  </div>
-    </div>
-  </header>
+{% include '@apprentice/partials/header-page.html.twig'%}
+<div class="container">
+<h1>About</h1>
 
 
-<h1>About Me</h1>
+<div class="about">
+<section>
+<p>I'm Natalie, a web developer apprentice based in England.  I like to learn about the lastest web technology and code from scratch.
+I enjoy the use of practical and creative skills applied in creating a bestoke website and both my scientific background and creative streak assist me in this.
+</p>
+<p>
+I am currently working at Digidrop, a digital agency based in Guildford.  Digidrop specialise in making bestoke websites focused around user experience.  The company has expertise in 
+making Drupal websites and works closely with the Drupal community.  
+</p>
 
-<div class="container-about">
+</section>
 <table id="web">
   <caption><h2>WEB DEVELOPMENT</h2></caption>
   <thead>
   <tr>
-    <th class="link"><h3>Web Development Projects</h3></th>
-    <th class="proj"><h3>DESCRIPTION</h3></th>
+    <th class="link"><h4>Web Projects</h4></th>
+    <th class="proj"><h4>Description</h4></th>
   </tr>
   </thead>
   <tbody>
@@ -67,9 +66,9 @@
   <caption><h2>QUALIFICATIONS</h2></caption>
   <thead>
   <tr>
-    <th class="inst"><h3>INSTITUTION</h3></th>
-    <th class="year"><h3>YEAR</h3></th>
-    <th class="qual"><h3>QUALIFICATION</h3></th>
+    <th class="inst"><h4>Institution</h4></th>
+    <th class="year"><h4>Year</h4></th>
+    <th class="qual"><h4>Qualifications</h4></th>
   </tr>
   </thead>
   <tbody>
@@ -96,9 +95,9 @@
   <caption><h2>WORK EXPERIENCE</h2></caption>
   <thead>
   <tr>
-    <th class="comp"><h3>COMPANY</h3></th>
-    <th class="job"><h3>JOB TITLE</h3></th>
-    <th class="work"><h3>DESCRIPTION</h3></th>
+    <th class="comp"><h4>Company</h4></th>
+    <th class="job"><h4>Job Title</h4></th>
+    <th class="work"><h4>Description</h4></th>
   </tr>
   </thead>
   <tbody>
@@ -119,5 +118,7 @@
   </tr>
   </tbody>
 </table>
+
+</div>
 
 </div>

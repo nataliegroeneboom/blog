@@ -1,15 +1,57 @@
-.layout-container > footer, .taxonomy-footer{
-  background: #000;
-  padding-top: 15px;
 
-.footer-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+footer{
+  div.container{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 1.5px;
+      display: block;
+      height: 1px;
+      background: black;
+      width: 100%
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 1px;
+      display: block;
+      height: 1px;
+      background: black;
+      width: 100%
+    }
 
-  .icons{
-    justify-self: center;
-    font-size: 30px;
-    color: #fff;
+    .footer-menu{
+      width: 77%;
+      line-height: 26px;
+      float: left;
+      @include tablet{
+        width: 70%;
+      }
+    }
+    .footer-contact{
+      width: 23%;
+      float: left;
+      line-height: 26px;
+      @include tablet{
+        width: 30%;
+      }
+      span{
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
+      .icons{
+        padding: 0 7px;
+        svg{
+          font-size: 26px;
+          color: black;
+        }
+      }
+    }
   }
 }

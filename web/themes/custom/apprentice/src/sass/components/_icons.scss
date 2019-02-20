@@ -13,12 +13,13 @@
    display: none;
    }
    .collapse.in{
-    margin: 80px;
+    height: 250px;  
+    width: 100%;
     .navbar-nav{
-        height: 160px;       
         .nav-item{      
             display: block;
-            margin: 15px 0;
+            margin: 0 auto;
+            padding: 2px 0;
         }
     }
    }

@@ -13,22 +13,19 @@
 		}
 
 	
-	@mixin tablet-portrait{
-	 @media(min-width: #{$phone}){
+	@mixin large-phone{
+	 @media(min-width: #{$phone}) and (max-width: #{$tablet - 1px}){
 		 @content;
 	 				}
 			}
 
-	@mixin small-screen{
-		@media(max-width: #{$tablet - 1px}){
+
+	@mixin tablet{
+			@media(min-width: #{$tablet}) and (max-width: #{$desktop - 1px}){
 			@content;
-		}
-	}		
-	@mixin tablet-landscape{
-		@media(min-width: #{$tablet}){
-		 @content;
-			 		}
-			}
+					}
+				   }		
+			
 
 	@mixin desktop{
 	 @media(min-width: #{$desktop}){
