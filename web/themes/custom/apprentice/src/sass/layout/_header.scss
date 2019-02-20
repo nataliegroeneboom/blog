@@ -182,44 +182,28 @@
 
     .topic{
       float: left;
-<<<<<<< HEAD
+
       display: inline;
-<<<<<<< HEAD
-      p{
-=======
-=======
-      //display: inline;
->>>>>>> 3f79c4c8be7da01190f724ff0b0c891c6c993b7e
+
       a{
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
         text-transform: uppercase;
         margin-right: 8px;
         letter-spacing: 0.16em;
         font-size: 14px;
         font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        &::before{
-          content: " \\ ";
-=======
+
         font-color: black;
-=======
+
         color: black;
->>>>>>> 3f79c4c8be7da01190f724ff0b0c891c6c993b7e
         &::before{
           content: " // ";
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
+
         }
       }
    
        }
 
        
-<<<<<<< HEAD
-       .topic.first-topic p::before{
-        content: "";
-       }
-=======
        .topic.first-topic a::before{
         content: "";
        }
@@ -234,5 +218,4 @@
        
        }
 
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
        
