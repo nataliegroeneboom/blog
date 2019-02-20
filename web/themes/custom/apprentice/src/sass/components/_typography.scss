@@ -117,16 +117,21 @@ font-size: 14px;
 //====================BLOG PAGE====================================================//
 //=================================================================================//
 .blog, .blogs-taxonomy{
+        h1{
+          text-align: left;
+          font-size: 24px;
+        }
 
 
-
-         .views-field.views-field-field-blog-topics-covered, .views-field-field-blog-date{
+         .views-field.views-field-field-blog-topics-covered{
                 font-weight: bold;
 
                 }
 
+               
+
                 .views-field.views-field-field-blog-topics-covered{
-                  grid-area: tag;
+                 
 
 
                   div ul{
@@ -141,51 +146,47 @@ font-size: 14px;
                   a{
                     font-size: 14px;
                     text-transform: uppercase;
-                    color: $tag-yellow;
+                    color: black;
+                    padding: 3px;
+                    background: #F0F0F0;
                   }
                 }
                 .views-field-field-blog-date{
-                  grid-area: author;
-                  width: 100px;
-                  margin-left: 100px;
-                  align-self: top;
-                  position: relative;
-                  @include phone{
-                    margin-left: 12px;
-                    width: inherit;
-                  }
-                  span{
+                  @media(min-width:760px){
                     position: absolute;
-                    top: 12px;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #898989;
-                    @include phone{
-                      display: inherit;
-                      width: 100%;
-                    }
+                    bottom: 0;
+                    right: 0px;
+                    width: 100px;
                   }
+                 
+                  span{
+                    font-size: 15px;
+                  }                  
 
                 }
                 .views-field-uid{
+                  @media(min-width: 760px){
+                  position: absolute;
+                  left: 530px;
+                  bottom: 0px;
+                  }
+                  @media(min-width:321px) and (max-width:992px){
+                    display:none;
+                  }
+                  
+                 span{
+                   font-size: 15px;
+                   a{
+                     font-size: 15px;
+                     color: black;
+                     text-transform: capitalize;
+                     &:hover{
+                       text-decoration: none;
+                     }
+                   }
+                 }
+                 
 
-                  grid-area: author;
-                  float: left;
-                  width: 100px;
-                  padding-left: 40px;
-                  position: relative;
-                  span{
-                    position: absolute;
-                    bottom: 0px;
-                  }
-                  span.field-content{
-                    right: 10px;
-                  }
-                  span a{
-                    font-size: 12px;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                  }
                   @include phone{
                     display: none;
                   }
@@ -195,11 +196,8 @@ font-size: 14px;
            .blog-title, .views-field-title{
 
                 margin-top: 5px;
-                grid-area: title;
                 span a{
                   font-size: 27px;
-                  font-weight: 700;
-                  font-family: 'Patua One', cursive;
                   color: #000;
                   @include phone{
                     font-size: 19px;
@@ -211,14 +209,13 @@ font-size: 14px;
            .blog-body, .views-field-body{
 
            font-size: 17px;
-           grid-area: text;
            color: #898989;
            @include phone{
              display: none;
 
            }
                 }
-//title==>
+//content==>
         .topics-covered{
           .field-content{
             p{
@@ -232,7 +229,15 @@ font-size: 14px;
         }
 //user picture==>
         .views-field-user-picture{
-            grid-area: author;
+          @media(min-width: 760px){
+            position: absolute;
+            left: 490px;
+            bottom: 0px;
+          }
+          @media(min-width:321px) and (max-width:992px){
+            display:none;
+          }            
+
             img{
               -webkit-clip-path: circle(50% at 50% 50%);
               clip-path: circle(50% at 50% 50%);
@@ -242,7 +247,7 @@ font-size: 14px;
             }
         }
 
-}
+}// end of blog page
 
 
     // ================= RECENT BLOG BLOCK ==========================
@@ -264,12 +269,7 @@ font-size: 14px;
 
 
 
-    .views-field-field-blog-date{
-      // &::after{
-      //   content: " | ";
-      //   font-size: 30px;
-      // }
-    }
+  
 
 
       @include phone{

@@ -10,15 +10,22 @@
 
 
 
-//===========recent-blogs mobile views===================
+//===========RECENT BLOG===================
 
+.view-blogs-recent{
+  .col{
+    @include tablet{
+      margin-bottom: 30px;
+    }
+  }
+}
 
-
-    @include phone{
+    @media(max-width:760px){
       .intro .region-content{
-        margin-top: 100px;
+       // margin-top: 100px;
         .row > div{
           margin-bottom: 15px;
+          padding: 0px 20px; 
         }
 
       }
@@ -30,31 +37,9 @@
 
 //=====TAXONOMY SPECIFIC BLOG PAGE=======================
 //====================================================
-// .blog, .blogs-taxonomy{
-
-//   .topics-wrapper{
-//       display: grid;
-//       grid-template-columns: 200px auto;
-//       grid-template-rows: 25px 45px 80px 20px 30px;
-//       grid-template-areas:
-//       "image tag"
-//       "image title"
-//       "image text"
-//       "image text"
-//       "image author";
-//       grid-column-gap: 15px;
-//       margin: 40px 60px;
-//       min-height: 200px;
-//       @include phone{
-//         display: block;
-//         margin: 20px 0px;
-//         clear: both;
-        
-//       }
-//   }
 
 
-// } // end of blogs view specific
+
 
 
 
@@ -91,31 +76,8 @@
 
   }
 
-    //====================blog grid=============================
-    //==========================================================
 
 
-   .grid{
-
-    margin: 0 auto;
-   }
 
 
-    .blog-grid{
-
-      height: 570px;
-      background: $white;
-      margin:  4px 4px;
-
-       @include phone {
-        padding: 0;
-        width: 32.6%;
-        img{
-          width: 100%;
-        }
-       }
-
-      .views-field-title{
-        font-size: $font-size-large;
-      }
-    }
+  

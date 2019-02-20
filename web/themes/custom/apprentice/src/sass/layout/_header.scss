@@ -14,19 +14,15 @@
 
   .slogan{
     list-style-type: none;
-    font-family: 'Over the Rainbow', cursive;
     text-align: center;
     color: black;
   }
  .main-menu{
-      margin-top: 10px;
-      list-style-type: none;
+      margin-top: 100px;
+      list-style: none;
       text-align: center;
+      padding-left: 0px;
 
-        li{
-          padding: 2px 0;
-        
-        }
 
     }
 
@@ -42,11 +38,7 @@
 
   #block-apprentice-main-menu{
   display: inline-block;
-<<<<<<< HEAD
- // float: right;
-=======
  
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
   width: 100vw;
   background: black;
   position: fixed;
@@ -120,7 +112,7 @@
   .slogan{
     padding-left: 0px;
     li{
-
+      list-style: none;
       width: 120px;
       a{
        font-size: 22px;
@@ -156,11 +148,7 @@
       height: 340px;
     }
   }
-<<<<<<< HEAD
-  }
-=======
   
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
 
   section.block-system-branding-block{
     display: inline-block;
@@ -168,11 +156,10 @@
       .slogan-name >a{
         color: black;
         font-size: 30px;
+        text-decoration: none;
       }
-<<<<<<< HEAD
-=======
 
-    @include phone{
+    @media(max-width:760px){
       position: fixed;
       top: 17px;
       left: 2px;
@@ -184,11 +171,10 @@
         font-size: 14px;
       }
     }
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
     }
 
     #block-apprentice-search{
-      display: inline-block;
+      //display: inline-block;
       float: right;
     }
 
@@ -196,22 +182,30 @@
 
     .topic{
       float: left;
+<<<<<<< HEAD
       display: inline;
 <<<<<<< HEAD
       p{
 =======
+=======
+      //display: inline;
+>>>>>>> 3f79c4c8be7da01190f724ff0b0c891c6c993b7e
       a{
 >>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
         text-transform: uppercase;
         margin-right: 8px;
         letter-spacing: 0.16em;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
+<<<<<<< HEAD
 <<<<<<< HEAD
         &::before{
           content: " \\ ";
 =======
         font-color: black;
+=======
+        color: black;
+>>>>>>> 3f79c4c8be7da01190f724ff0b0c891c6c993b7e
         &::before{
           content: " // ";
 >>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
@@ -233,7 +227,7 @@
 
        //===========NAVIGATION BAR
 
-       @media(min-width:970px){
+       @media(min-width:767px){
         button.navbar{
           display: none !important;
         }

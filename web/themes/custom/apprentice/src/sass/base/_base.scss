@@ -14,8 +14,12 @@ body{
 }
 
 .container{
-  @include desktop{
-    width: 1470px;
+  box-sizing: border-box;
+  @media(min-width: 1600px){
+    max-width: 1470px;
+  }
+  @include tablet{
+    max-width: 890px;
   }
 }
 

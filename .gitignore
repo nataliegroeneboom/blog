@@ -22,3 +22,9 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ingore node_modules
+/web/themes/custom/apprentice/node_modules/
+
+# Ingore node_modules
+/.ddev/
