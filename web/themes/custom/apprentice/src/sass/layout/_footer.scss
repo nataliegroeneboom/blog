@@ -32,6 +32,9 @@ footer{
       @include tablet{
         width: 70%;
       }
+      @media(max-width:766px){
+        display: none;
+      }
     }
     .footer-contact{
       width: 23%;
@@ -39,6 +42,9 @@ footer{
       line-height: 26px;
       @include tablet{
         width: 30%;
+      }
+      @media(max-width:766px){
+        width: 100%;
       }
       span{
         font-size: 14px;

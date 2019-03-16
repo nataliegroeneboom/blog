@@ -12,21 +12,13 @@
 			$("#block-apprentice-main-menu").addClass("navbar");
 			$('.view-topics-covered .view-content>div').addClass('topic');
 			$('.view-topics-covered .view-content>div:first-child').addClass('first-topic');
-<<<<<<< HEAD
-=======
-			$('.collapse').collapse();
->>>>>>> aff8a6b9266122e28c07ecfe5603813932c1817a
 
 				if($('.layout-sidebar').find('.view-content')){
 					$('.layout-sidebar').addClass('checking');
 				}
 
 	
-				$('.nav-item').on('click',function(){
-					$('#navbarCollapse').hide();
-					$('#navbarCollapse').removeClass('in');
 
-				})
 
 
 

@@ -7,113 +7,90 @@
     height: 250px;
   }
 }
+.header-background{
+  background: black;
+  position: fixed;
+  width: 100%;
+  z-index: 24;
+  overflow-x: hidden;
+}
 
-  .header{
+  .navbar-default{
     @extend %clearfix;
-    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: block;
 
-  .slogan{
-    list-style-type: none;
-    text-align: center;
-    color: black;
-  }
- .main-menu{
-      margin-top: 100px;
-      list-style: none;
-      text-align: center;
-      padding-left: 0px;
-
-
+    .navbar{
+      margin-bottom: 0;
+      border: none;
+      .navbar-toggle{
+        &:hover{
+          background: transparent;
+        }
+        &:active{
+          background: transparent;
+        }
+      }
     }
+  }
 
 
-
-
-
-
-  
-
- 
 
 
   #block-apprentice-main-menu{
-  display: inline-block;
- 
-  width: 100vw;
-  background: black;
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  }
+    position: relative;
+   
 
-
-    .main-menu{
-
-
-          li{
-            display: inline-block;
-            width: 150px;
-            text-align: center;
-          }
-          .icon{
-            display: none;
-          }
+    button {
+     position: absolute;
+     right: 10px;
+     top: 5px;
+  
+      span{
+        margin: 5px;
+        svg{
+          color: white;
+        }
+      } 
     }
+    .menu--main{
+      @media(max-width: 766px){
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      
+      li{
+        display: inline-block;
 
-.print{
-  display: none;
-}
+        @media(max-width: 766px){
+          display: block;
+          text-align: center;
 
-//large screen navigation 
-
-
-
-
-@include phone{
-  .navbar{
-
-    width: 150px;
-    li{
-      width: auto;
-      a{
-        font-size: 22px;
+        }
+        a{
+          color: white;
+          &:hover{
+            font-weight: bold;
+            color: black;
+          }
+        }
+        &:hover{
+          background: transparent;
+        }
       }
     }
 
-    .main-menu{
-
-                 
-                 .icon{
-                   float: right;
-                   display: block;
-                   padding-right: 15px;
-                 }
-                 &.responsive{
-
-                   .menu-item{
-                     float: none;
-                     display: block;
-                   }
-                   .icon a{
-                     position: absolute;
-                     top: 5px;
-                     right: 15px;
-                   }
-
-                 }
-         }
+  }
 
 
 
-
-
-  }// end of navbar class
 
   .slogan{
     padding-left: 0px;
     li{
       list-style: none;
-      width: 120px;
+      width: 220px;
       a{
        font-size: 22px;
      }
@@ -123,7 +100,7 @@
 
   }
 
-}// end of mobile view
+
 
 
 //topics covered
@@ -138,16 +115,13 @@
 
 
 
-}//end of header
 
 
-  .banner{
-    width: 100%;
-    height: 200px;
+
     .parallax{
       height: 340px;
     }
-  }
+  
   
 
   section.block-system-branding-block{

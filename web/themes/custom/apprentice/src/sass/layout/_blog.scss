@@ -3,26 +3,55 @@
 
 
 //blog individual page ----title header
- .banner{
-  margin: 30px 0px;
-}
 
 .individual-page{
-
+  margin-top: 100px;
 
   .region-content{
     width: 75%;
     float: left;
+    @media(max-width: 766px){
+      width: 100%;
+      float: none;
+    }
 
   }
   aside.layout-sidebar{
     width: 25%;
     float: left;
+    @media(max-width: 766px){
+      display: none;
+    }
+  }
+
+  .ds-2col-fluid > .group-right, .ds-2col-fluid > .group-left{
+    float: none;
+    width: 100%;
+  }
+
+  .group-left{
+    img, p{
+      margin: 15px 15px 15px 0;
+    }
+  }
+  .group-right{
+    img, p{
+      margin: 15px 0px 15px 15px;
+    }
+  }
+  .group-right, .group-left{
+    p{
+      font-size: 21px;
+    }
   }
 
 }
 .layout-content-sec{
   clear: both;
+}
+
+.paragraph--type--image-full, .layout--onecol{
+  margin: 15px 0px;
 }
 
 
@@ -39,13 +68,18 @@
 .blog-full-content{
 
      margin-right: 15px;
-
+    @media(max-width: 768px){
+      margin: 0;
+    }
 
 
   .field--name-field-blog-topics-covered > .field--item{
       display: inline-block;
       margin-top: 25px;
       margin-bottom: 75px;
+      @media(max-width: 768px){
+        margin: 0;
+      }
       a{
         color: $tag-yellow;
         font-size: 27px;
@@ -75,6 +109,10 @@
       font-size: $font-size-subheading;
       font-weight: bold;
       margin: 10px 0 30px 0;
+
+      @media(max-width: 768px){
+        font-size: 21px;
+      }
     }
 
   }
@@ -85,16 +123,25 @@
 
   .author-info{
     margin-bottom: 55px;
+    @media(max-width: 768px){
+      margin: 15px 0;
+    }
       .field--name-user-picture{
         float: left;
         img{
           -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
+          @media(max-width: 768px){
+            margin-right: 25px;
+          }
         }
       }
       .field--name-field-bio{
         padding-left: 120px;
         padding-top: 15px;
+        @media(max-width: 768px){
+          padding: 0;
+        }
         p{
           font-size: $font-size-text;
           font-style: italic;
@@ -110,6 +157,7 @@
 
 .blog, .blogs-taxonomy{
   padding-left: 0;
+  margin-top: 100px;
   .topics-wrapper{
     height: inherit;
     @media(max-width:760px){

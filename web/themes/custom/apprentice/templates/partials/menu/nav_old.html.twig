@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for a menu block.
+ * Default theme implementation for a menu block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -29,20 +29,37 @@
  * to or skip the links.
  * See http://juicystudio.com/article/screen-readers-display-none.php and
  * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
+ *
+ * @ingroup templates
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+{% 
+  set bootstrap_classes = [
+    'navbar',
+    'navbar-expand-md',
+    'navbar-dark',
+    'fixed-top',
+    'bg-dark'
+  ]
+%}
+
+
+
+<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(bootstrap_classes).removeClass('clearfix')|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
-    {% set title_attributes = title_attributes.addClass('visually-hidden') %}
+    {% set title_attributes = title_attributes.addClass('sr-only') %}
   {% endif %}
-  {{ title_prefix }}
   <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
-  {{ title_suffix }}
-
-  {# Menu. #}
+ <button {{attributes.addClass('navbar-toggle collapsed')}} type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+  </button>
   {% block content %}
-    {{ content }}
+
+   <div class="collapse navbar-collapse" id="navbarCollapse"> {{ content }} </div>
   {% endblock %}
 </nav>
+
+
+

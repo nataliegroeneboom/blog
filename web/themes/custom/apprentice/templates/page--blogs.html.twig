@@ -44,7 +44,9 @@
  */
 #}
 
-{% include '@apprentice/partials/header-page.html.twig'%}
+ <div class="header-background">
+      {% include '@apprentice/partials/header-page.html.twig'%}
+    </div>  
 
 
 
@@ -89,16 +91,6 @@
 
   </main>
 
-  {% if page.footer %}
-  <footer role="contentinfo">
-  <div class="container">
-  <div class="footer-grid">
-    <a class="icons" href="https://github.com/nataliegroeneboom" target="_blank"><i class="fab fa-github-square"></i></a>
-    <a class="icons" href="https://www.linkedin.com/in/natalie-groeneboom-07110351/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a class="icons" href="https://www.flickr.com/" target="_blank"><i class="fab fa-flickr"></i></a>
-  </div>
-  </div>
-  </footer>
-  {% endif %}
 
 </div>{# /.container #}
+{% include '@apprentice/partials/footer.html.twig'%}

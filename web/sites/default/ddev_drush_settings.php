@@ -20,5 +20,5 @@ if (version_compare($version, "7.0") > 0) {
   );
 } else {
   // or the old db_url format for d6
-  $db_url = 'mysql://db:db@127.0.0.1:32768/db';
+  $db_url = 'mysqli://db:db@127.0.0.1:32768/db';
 }

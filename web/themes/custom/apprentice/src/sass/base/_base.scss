@@ -22,6 +22,9 @@ body{
     max-width: 890px;
   }
 }
+main{
+  overflow-x: hidden;
+}
 
 li.print{
   display: none;

@@ -3,25 +3,20 @@
    span{
        float: right;
        margin: 20px;
-       .fa-bars{
-           color: white;
-           font-size: 25px;
-       }
+     
    } 
 
-   .collapse:not(.in){
-   display: none;
-   }
-   .collapse.in{
-    height: 250px;  
-    width: 100%;
-    .navbar-nav{
-        .nav-item{      
-            display: block;
-            margin: 0 auto;
-            padding: 2px 0;
-        }
-    }
-   }
+  
+//    .collapse.in{
+//     height: 250px;  
+//     width: 100%;
+//     .navbar-nav{
+//         .nav-item{      
+//             display: block;
+//             margin: 0 auto;
+//             padding: 2px 0;
+//         }
+//     }
+//    }
 }
 
