@@ -61,3 +61,16 @@ footer{
     }
   }
 }
+
+.region-bottom-right{
+  .navbar-right{
+  @media(min-width:768px){
+    margin-right: 80px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  }
+
+}

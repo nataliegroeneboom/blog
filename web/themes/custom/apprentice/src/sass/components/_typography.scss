@@ -259,13 +259,19 @@ font-size: 14px;
     .views-field-field-blog-date, .views-field-title{
     //    font-size: $font-size-small;
         font-weight: bold;
-
-
+        a{
+          color: #333333;
+          text-decoration: none;
+        }
        }
 
 
        .views-field-body{
         font-size: $font-size-vsmall;
+        a{
+          color: black;
+          text-decoration: none;
+        }
        }
 
 

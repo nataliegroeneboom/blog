@@ -272,9 +272,15 @@ aside.layout-sidebar .views-field-body a {
 
 .recent-blog .views-field-field-blog-date, .recent-blog .views-field-title {
   font-weight: bold; }
+  .recent-blog .views-field-field-blog-date a, .recent-blog .views-field-title a {
+    color: #333333;
+    text-decoration: none; }
 
 .recent-blog .views-field-body {
   font-size: 1em; }
+  .recent-blog .views-field-body a {
+    color: black;
+    text-decoration: none; }
 
 @media (max-width: 319px) {
   .recent-blog .views-field-title, .recent-blog .views-field-body {
@@ -628,6 +634,14 @@ footer div.container {
         font-size: 26px;
         color: black; }
 
+@media (min-width: 768px) {
+  .region-bottom-right .navbar-right {
+    margin-right: 80px; } }
+
+.region-bottom-right .navbar-right a {
+  color: black;
+  text-decoration: none; }
+
 .top-header {
   height: 400px;
   margin-bottom: 250px; }
@@ -638,7 +652,7 @@ footer div.container {
 .header-background {
   background: black;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 24;
   overflow-x: hidden; }
 
@@ -655,11 +669,12 @@ footer div.container {
       background: transparent; }
 
 #block-apprentice-main-menu {
-  position: relative; }
+  position: relative;
+  font-size: 25px; }
   #block-apprentice-main-menu button {
     position: absolute;
     right: 10px;
-    top: 5px; }
+    top: 2px; }
     #block-apprentice-main-menu button span {
       margin: 5px; }
       #block-apprentice-main-menu button span svg {
@@ -692,11 +707,11 @@ footer div.container {
 
 .block-views-blocktopics-covered-block-1 {
   float: left;
-  clear: right;
-  width: 100vw; }
+  clear: right; }
 
 .parallax {
-  height: 340px; }
+  height: 340px;
+  overflow-x: hidden; }
 
 section.block-system-branding-block {
   display: inline-block;

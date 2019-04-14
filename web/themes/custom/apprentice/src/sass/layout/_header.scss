@@ -10,7 +10,7 @@
 .header-background{
   background: black;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 24;
   overflow-x: hidden;
 }
@@ -40,12 +40,14 @@
 
   #block-apprentice-main-menu{
     position: relative;
-   
+    font-size: 25px;
+    
 
     button {
      position: absolute;
      right: 10px;
-     top: 5px;
+     top: 2px;
+     
   
       span{
         margin: 5px;
@@ -107,7 +109,7 @@
 .block-views-blocktopics-covered-block-1{
   float: left;
   clear: right;
-  width: 100vw;
+
  
 
 
@@ -120,6 +122,7 @@
 
     .parallax{
       height: 340px;
+      overflow-x: hidden;
     }
   
   
