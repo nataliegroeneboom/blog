@@ -125,24 +125,20 @@ font-size: 14px;
         }
 
 
-         .views-field.views-field-field-blog-topics-covered{
+         .field--name-field-blog-topics-covered{
                 font-weight: bold;
 
                 }
 
                
 
-                .views-field.views-field-field-blog-topics-covered{
-                 
-
-
-                  div ul{
-                    list-style: none;
-                    li{
+                .field--name-field-blog-topics-covered{
+               
+                    .field--item{
                       display: inline-block;
                       margin-right: 8px;
                     }
-                  }
+                  
 
 
                   a{
@@ -153,6 +149,7 @@ font-size: 14px;
                     background: #F0F0F0;
                   }
                 }
+
                 .views-field-field-blog-date{
                   @media(min-width:760px){
                     position: absolute;
@@ -166,36 +163,36 @@ font-size: 14px;
                   }                  
 
                 }
-                .views-field-uid{
-                  @media(min-width: 760px){
-                  position: absolute;
-                  left: 5%;;
-                  bottom: 0px;
-                  }
-                  @media(min-width:321px) and (max-width:992px){
-                    display:none;
-                  }
+                // .views-field-uid{
+                //   @media(min-width: 760px){
+                //   position: absolute;
+                //   left: 5%;;
+                //   bottom: 0px;
+                //   }
+                //   @media(min-width:321px) and (max-width:992px){
+                //     display:none;
+                //   }
                   
-                 span{
-                   font-size: 15px;
-                   a{
-                     font-size: 15px;
-                     color: black;
-                     text-transform: capitalize;
-                     &:hover{
-                       text-decoration: none;
-                     }
-                   }
-                 }
+                //  span{
+                //    font-size: 15px;
+                //    a{
+                //      font-size: 15px;
+                //      color: black;
+                //      text-transform: capitalize;
+                //      &:hover{
+                //        text-decoration: none;
+                //      }
+                //    }
+                //  }
                  
 
-                  @include phone{
-                    display: none;
-                  }
-                }
+                //   @include phone{
+                //     display: none;
+                //   }
+                // }
 
 
-           .blog-title, .views-field-title{
+           .blog-title, h2{
 
                 margin-top: 5px;
                 span a{
@@ -208,7 +205,7 @@ font-size: 14px;
 
                 }
                 }
-           .blog-body, .views-field-body{
+           .blog-body, .field--name-body{
 
            font-size: 17px;
            color: #898989;

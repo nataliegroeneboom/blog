@@ -14,7 +14,8 @@ body {
       padding-top: none; } }
 
 .container {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media (min-width: 1600px) {
     .container {
       max-width: 1470px; } }
@@ -79,15 +80,22 @@ li.print {
     width: 50%; } }
 
 .view-topics-block img {
+  -webkit-filter: grayscale(80%);
   
   filter: greyscale(80%);
-  transition: filter 1s; }
+  -webkit-transition: filter 0.7s;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s; }
   .view-topics-block img:hover {
+    -webkit-filter: grayscale(0%);
     
     filter: greyscale(0%); }
 
 .view-blogs-recent .views-field-field-resuable-image img {
-  filter: brightness(150%); }
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%); }
   @media (max-width: 760px) {
     .view-blogs-recent .views-field-field-resuable-image img {
       width: 100%; } }
@@ -178,16 +186,14 @@ aside.layout-sidebar .views-field-body a {
   margin-top: 20px;
   margin-bottom: 20px; }
 
-.blog .views-field.views-field-field-blog-topics-covered, .blogs-taxonomy .views-field.views-field-field-blog-topics-covered {
+.blog .field--name-field-blog-topics-covered, .blogs-taxonomy .field--name-field-blog-topics-covered {
   font-weight: bold; }
 
-.blog .views-field.views-field-field-blog-topics-covered div ul, .blogs-taxonomy .views-field.views-field-field-blog-topics-covered div ul {
-  list-style: none; }
-  .blog .views-field.views-field-field-blog-topics-covered div ul li, .blogs-taxonomy .views-field.views-field-field-blog-topics-covered div ul li {
-    display: inline-block;
-    margin-right: 8px; }
+.blog .field--name-field-blog-topics-covered .field--item, .blogs-taxonomy .field--name-field-blog-topics-covered .field--item {
+  display: inline-block;
+  margin-right: 8px; }
 
-.blog .views-field.views-field-field-blog-topics-covered a, .blogs-taxonomy .views-field.views-field-field-blog-topics-covered a {
+.blog .field--name-field-blog-topics-covered a, .blogs-taxonomy .field--name-field-blog-topics-covered a {
   font-size: 14px;
   text-transform: uppercase;
   color: black;
@@ -204,44 +210,21 @@ aside.layout-sidebar .views-field-body a {
 .blog .views-field-field-blog-date span, .blogs-taxonomy .views-field-field-blog-date span {
   font-size: 15px; }
 
-@media (min-width: 760px) {
-  .blog .views-field-uid, .blogs-taxonomy .views-field-uid {
-    position: absolute;
-    left: 5%;
-    bottom: 0px; } }
-
-@media (min-width: 321px) and (max-width: 992px) {
-  .blog .views-field-uid, .blogs-taxonomy .views-field-uid {
-    display: none; } }
-
-.blog .views-field-uid span, .blogs-taxonomy .views-field-uid span {
-  font-size: 15px; }
-  .blog .views-field-uid span a, .blogs-taxonomy .views-field-uid span a {
-    font-size: 15px;
-    color: black;
-    text-transform: capitalize; }
-    .blog .views-field-uid span a:hover, .blogs-taxonomy .views-field-uid span a:hover {
-      text-decoration: none; }
-
-@media (max-width: 319px) {
-  .blog .views-field-uid, .blogs-taxonomy .views-field-uid {
-    display: none; } }
-
-.blog .blog-title, .blog .views-field-title, .blogs-taxonomy .blog-title, .blogs-taxonomy .views-field-title {
+.blog .blog-title, .blog h2, .blogs-taxonomy .blog-title, .blogs-taxonomy h2 {
   margin-top: 5px; }
-  .blog .blog-title span a, .blog .views-field-title span a, .blogs-taxonomy .blog-title span a, .blogs-taxonomy .views-field-title span a {
+  .blog .blog-title span a, .blog h2 span a, .blogs-taxonomy .blog-title span a, .blogs-taxonomy h2 span a {
     font-size: 27px;
     color: #000; }
     @media (max-width: 319px) {
-      .blog .blog-title span a, .blog .views-field-title span a, .blogs-taxonomy .blog-title span a, .blogs-taxonomy .views-field-title span a {
+      .blog .blog-title span a, .blog h2 span a, .blogs-taxonomy .blog-title span a, .blogs-taxonomy h2 span a {
         font-size: 19px;
         line-height: 1.1; } }
 
-.blog .blog-body, .blog .views-field-body, .blogs-taxonomy .blog-body, .blogs-taxonomy .views-field-body {
+.blog .blog-body, .blog .field--name-body, .blogs-taxonomy .blog-body, .blogs-taxonomy .field--name-body {
   font-size: 17px;
   color: #898989; }
   @media (max-width: 319px) {
-    .blog .blog-body, .blog .views-field-body, .blogs-taxonomy .blog-body, .blogs-taxonomy .views-field-body {
+    .blog .blog-body, .blog .field--name-body, .blogs-taxonomy .blog-body, .blogs-taxonomy .field--name-body {
       display: none; } }
 
 .blog .topics-covered .field-content p, .blogs-taxonomy .topics-covered .field-content p {
@@ -510,7 +493,6 @@ h1 {
   @media (min-width: 760px) {
     .blog .view-content > div, .blogs-taxonomy .view-content > div {
       clear: both;
-      height: 250px;
       margin: 0 30px 30px 0;
       position: relative; } }
   @media (min-width: 760px) {
@@ -566,11 +548,14 @@ h1 {
     .region-content-secondary .topics-covered .topics-wrapper {
       width: 240px;
       border: 10px solid #fff;
-      box-shadow: 5px 10px 4px 3px rgba(56, 56, 56, 0.6), 2px 4px 2px 5px rgba(142, 142, 142, 0.8);
+      -webkit-box-shadow: 5px 10px 4px 3px rgba(56, 56, 56, 0.6), 2px 4px 2px 5px rgba(142, 142, 142, 0.8);
+              box-shadow: 5px 10px 4px 3px rgba(56, 56, 56, 0.6), 2px 4px 2px 5px rgba(142, 142, 142, 0.8);
       margin: 0 auto;
+      -webkit-transition: 0.08s;
       transition: 0.08s; }
       .region-content-secondary .topics-covered .topics-wrapper:hover {
-        box-shadow: 0px 0px 1px 1px rgba(56, 56, 56, 0.4), 1px 1px 1px 3px rgba(142, 142, 142, 0.4); }
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(56, 56, 56, 0.4), 1px 1px 1px 3px rgba(142, 142, 142, 0.4);
+                box-shadow: 0px 0px 1px 1px rgba(56, 56, 56, 0.4), 1px 1px 1px 3px rgba(142, 142, 142, 0.4); }
 
 .layout-container {
   margin-left: auto;
