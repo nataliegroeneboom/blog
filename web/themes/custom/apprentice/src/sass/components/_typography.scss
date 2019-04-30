@@ -125,22 +125,24 @@ font-size: 14px;
         }
 
 
-         .field--name-field-blog-topics-covered{
+         .views-field-field-blog-topics-covered{
                 font-weight: bold;
 
                 }
 
                
 
-                .field--name-field-blog-topics-covered{
+                .views-field-field-blog-topics-covered{
                
-                    .field--item{
+                   .field-content > ul{
+                     padding-left: 0px;
+                   } 
+                  .field-content > ul > li{
                       display: inline-block;
                       margin-right: 8px;
                     }
+
                   
-
-
                   a{
                     font-size: 14px;
                     text-transform: uppercase;
@@ -205,15 +207,23 @@ font-size: 14px;
 
                 }
                 }
-           .blog-body, .field--name-body{
+           .blog-body, .views-field-body{
 
            font-size: 17px;
            color: #898989;
            @include phone{
              display: none;
 
-           }
-                }
+                 }
+          }
+
+
+          .views-field-node-link > a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #000;
+          }
+
 //content==>
         .topics-covered{
           .field-content{
@@ -227,31 +237,41 @@ font-size: 14px;
           }
         }
 //user picture==>
-        .views-field-user-picture{
-          @media(min-width: 760px){
-            position: absolute;
-            left: 0px;
-            bottom: 0px;
-          }
-          @media(min-width:321px) and (max-width:992px){
-            display:none;
-          }            
+        // .views-field-user-picture{
+        //   @media(min-width: 760px){
+        //     position: absolute;
+        //     left: 0px;
+        //     bottom: 0px;
+        //   }
+        //   @media(min-width:321px) and (max-width:992px){
+        //     display:none;
+        //   }            
 
-            img{
-              -webkit-clip-path: circle(50% at 50% 50%);
-              clip-path: circle(50% at 50% 50%);
-            }
-            @include phone{
-              display: none;
-            }
-        }
+        //     img{
+        //       -webkit-clip-path: circle(50% at 50% 50%);
+        //       clip-path: circle(50% at 50% 50%);
+        //     }
+        //     @include phone{
+        //       display: none;
+        //     }
+        // }
 
 }// end of blog page
 
 
     // ================= RECENT BLOG BLOCK ==========================
 
-   .recent-blog{
+    
+    .recent-blog{
+      .row > .col{
+        @media(min-width: 1200px){
+          height: 300px;
+        }
+        @media(min-width:1000px) and (max-width: 1199px){
+          height: 360px;
+        }
+        
+      }
 
     .views-field-field-blog-date, .views-field-title{
     //    font-size: $font-size-small;
